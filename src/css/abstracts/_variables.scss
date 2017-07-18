@@ -2,8 +2,9 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-$primary-font: 'azedobold';
-$secondary-font: 'azedolight';
+$primary-font: 'azedobold', sans-serif;
+$secondary-font: 'azedolight', sans-serif;
+$body-font: 'Montserrat', sans-serif;
 
 $text-color: #001e2b;
 $light-grey: rgb(237, 237, 237) !default;
