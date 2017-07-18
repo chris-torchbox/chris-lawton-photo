@@ -11,7 +11,7 @@ if (!window.Promise) {
   window.Promise = Promise;
 }
 
-const title = '';
+const title = 'Chris Lawton Photography';
 const description = '';
 const hero = '';
 
