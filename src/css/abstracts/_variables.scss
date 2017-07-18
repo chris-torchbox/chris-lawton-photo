@@ -2,13 +2,9 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-/// Regular font family
-/// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$primary-font: 'azedobold';
+$secondary-font: 'azedolight';
 
-/// Code (monospace) font family
-/// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
 /// Copy text color
 /// @type Color
