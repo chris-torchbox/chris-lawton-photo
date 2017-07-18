@@ -5,7 +5,7 @@ function Post(props) {
   return (
     <div>
       <Helmet>
-        <title>{props.match.params.post}</title>
+        <title>{props.match.params.post} | Chris Lawton Photography</title>
       </Helmet>
       {props.match.params.post}
     </div>
