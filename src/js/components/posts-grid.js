@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 class PostsGrid extends Component {
   renderPosts() {
     return this.props.posts.map(post =>
-      <NavLink to={post.slug} key={post.title} title={post.title}>
+      <NavLink to={post.slug} key={post.title}>
         {post.title}
       </NavLink>,
     );
