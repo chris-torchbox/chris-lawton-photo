@@ -5,7 +5,7 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <NavLink to="/">Home</NavLink>
+        <NavLink to="/">Chris Lawton</NavLink>
       </header>
     );
   }
