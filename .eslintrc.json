@@ -6,5 +6,8 @@
   "rules": {
     "react/prop-types": 0,
     "react/jsx-filename-extension": 0
+  },
+  "globals": {
+    "UNSPLASH_API": true
   }
 }
