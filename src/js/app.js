@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import { Helmet } from 'react-helmet';
 import { BrowserRouter } from 'react-router-dom';
 import Header from './components/header';
 import Main from './components/main';
+import configureStore from './store/configure-store';
 
 // Promise polyfill for IE11-.
 // This is required fof the fetch API polyfill (whatwg-fetch) to work.
@@ -11,11 +13,13 @@ if (!window.Promise) {
   window.Promise = Promise;
 }
 
+const store = configureStore();
 const title = 'Chris Lawton Photography';
 const description = '';
 const hero = '';
 
 ReactDOM.render(
+  <Provider store={store}>
     <div>
       <Helmet>
         <title>{title}</title>
@@ -42,4 +46,5 @@ ReactDOM.render(
         </div>
       </BrowserRouter>
     </div>
+  </Provider>
   , document.querySelector('.container'));
