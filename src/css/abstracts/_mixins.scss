@@ -32,3 +32,10 @@
   }
 }
 
+// media query mixin
+@mixin media($width) {
+  @media (min-width: $width){
+    @content;
+  }
+}
+
