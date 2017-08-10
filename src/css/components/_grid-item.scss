@@ -1,0 +1,43 @@
+.grid-item {
+  align-items: flex-end;
+  display: flex;
+  flex-basis: 33%;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+
+  &__content {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+  }
+
+  &__image {
+    max-width: 415px;
+  }
+
+  &__title {
+    @include font(20px, 45px);
+    font-family: $primary-font;
+    margin-bottom: 20px;
+  }
+
+  &__copy {
+    @include font(16px, 18px);
+    font-family: $body-font;
+    margin-bottom: 5px;
+
+    &::before,
+    &::after {
+      content:'-'
+    }
+  }
+
+  &__date {
+    font-family: $primary-font;
+    margin-bottom: 10px;
+  }
+}
