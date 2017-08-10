@@ -28,7 +28,7 @@ class PostsGrid extends Component {
     const posts = this.renderPosts();
 
     return (
-      <div>
+      <div className="grid">
         {posts}
       </div>
     );
