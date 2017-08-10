@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import _ from 'lodash';
 import { allCollectionsFetch } from '../actions/collections';
+import PostsGrid from './../components/posts-grid';
 
 class Home extends Component {
   componentDidMount() {
@@ -24,13 +25,13 @@ class Home extends Component {
       return <div />;
     }
 
-    console.log(this.props.collections);
     return (
       <div>
         <Helmet>
           <title>Chris Lawton Photography</title>
         </Helmet>
         <p>Home</p>
+        <PostsGrid posts={this.props.collections} />
       </div>
     );
   }
