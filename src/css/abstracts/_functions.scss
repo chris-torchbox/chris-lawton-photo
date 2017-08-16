@@ -28,3 +28,13 @@
 @function font($path, $base: $base-url) {
   @return asset($base, 'fonts/', $path);
 }
+
+@function px-to-pc($target, $context: 100%) {
+  @return ($target / $context) * 100%;
+}
+
+@function per-line($items) {
+  $gutter-percentage: px-to-pc(10px) * 2;
+  $g-total: $items * $gutter-percentage;
+  @return (100% / $items) - $g-total;
+}
