@@ -12,8 +12,8 @@ class PostsGrid extends Component {
     console.log(allCollectionsArray);
 
     return allCollectionsArray.map(collection =>
-      <NavLink to={collection.title} key={collection.title} className="grid-item">
         <div className="overlay"></div>
+      <NavLink to={this.parseCollectionHref(collection.title)} key={collection.title} className="grid-item">
         {/*<img src={collection.cover_photo.urls.small} alt="" />*/}
         <img src="https://placehold.it/400x267" alt="" />
         <div className="grid-item__content">
@@ -23,6 +23,10 @@ class PostsGrid extends Component {
         </div>
       </NavLink>,
     );
+  }
+
+  parseCollectionHref(href) {
+    return `/trips/${href.toLowerCase()}`;
   }
 
   render() {
