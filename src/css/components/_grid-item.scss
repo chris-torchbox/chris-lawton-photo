@@ -1,9 +1,11 @@
 .grid-item {
   align-items: flex-end;
   display: flex;
-  flex-basis: 33%;
+  // flex-basis: 33%;
+  flex-basis: 400px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
   position: relative;
 
   &__content {
