@@ -32,3 +32,25 @@
   }
 }
 
+// Viewport sized typography mixin that takes a min and max pixel-based value
+@mixin responsive-font-size($min, $max) {
+
+  $vw-context: (1260 * .1) * 1px;
+  $responsive: ($max / $vw-context) * 10vw;
+
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+
+  $max-breakpoint: $max / $responsive-unitless * 100;
+
+  @media (min-#{$dimension}: #{$max-breakpoint}) {
+    font-size: $max;
+  }
+
+  font-size: $responsive;
+}
