@@ -1,22 +1,27 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Card, CardContent, Title, Teaser, Date, Grid } from './styled';
 
 class PostsGrid extends Component {
   renderPosts() {
     return this.props.posts.map(post =>
-      <NavLink to={post.slug} key={post.title}>
-        {post.title}
-      </NavLink>,
-    );
+      (<Card to={post.slug} key={post.title}>
+        <div className="overlay" />
+        <img src="https://placehold.it/426" />
+        <CardContent>
+          <Title>{post.title}</Title>
+          <Teaser>{post.teaser}</Teaser>
+          <Date>{post.date}</Date>
+        </CardContent>
+      </Card>));
   }
 
   render() {
     const posts = this.renderPosts();
 
     return (
-      <div>
+      <Grid>
         {posts}
-      </div>
+      </Grid>
     );
   }
 }
