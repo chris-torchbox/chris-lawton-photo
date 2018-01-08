@@ -37,4 +37,13 @@ export const Hero = styled.div`
   height: 100vh;
   background: url(${PostData[0].hero}), no-repeat, center;
   background-size: cover;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00000070;
+  }
 `;
