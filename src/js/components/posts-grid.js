@@ -6,13 +6,12 @@ class PostsGrid extends Component {
     return this.props.posts.map(post =>
       (<Card to={post.slug} key={post.title}>
         <div className="overlay" />
-        <img src="https://placehold.it/426" />
         <CardContent>
           <Title>{post.title}</Title>
           <Teaser>{post.teaser}</Teaser>
           <Date>{post.date}</Date>
         </CardContent>
-      </Card>));
+       </Card>));
   }
 
   render() {
