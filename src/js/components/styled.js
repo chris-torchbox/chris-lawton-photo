@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import PostData from './../data/trips/bristol';
 
 export const Grid = styled.div`
     display: grid;
@@ -41,7 +40,6 @@ export const Date = styled.p`
 
 export const Hero = styled.div`
   height: 100vh;
-  background: url(${PostData[0].hero}), no-repeat, center;
   background-size: cover;
   position: relative;
 
