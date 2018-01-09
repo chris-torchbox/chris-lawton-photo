@@ -4,12 +4,18 @@ import PostData from './../data/trips/bristol';
 
 export const Grid = styled.div`
     display: grid;
-    grid-template-columns: repeat(3, 426px);
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
 `;
 
 export const Card = styled(NavLink)`
     color: white;
     position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+    }
 `;
 
 export const CardContent = styled.div`
