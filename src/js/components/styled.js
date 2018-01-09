@@ -40,8 +40,14 @@ export const Date = styled.p`
 
 export const Hero = styled.div`
   height: 100vh;
+
   background-size: cover;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
   &:after {
     content: '';
@@ -50,4 +56,14 @@ export const Hero = styled.div`
     height: 100%;
     background: #00000070;
   }
+`;
+
+export const HeroHeading = styled.h1`
+  color: white;
+  z-index: 10;
+`;
+
+export const HeroSubHeading = styled.h2`
+  color: white;
+  z-index: 10;
 `;
