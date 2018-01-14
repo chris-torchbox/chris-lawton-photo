@@ -12,6 +12,7 @@ class Post extends Component {
   }
 
   componentDidMount() {
+    document.querySelector('header').classList.add('is-hidden');
     // const url = `./../../data/trips/.json`;
     const url = `http://localhost:8080/src/js/data/trips/${this.props.match.params.post}.json`;
 
@@ -28,6 +29,10 @@ class Post extends Component {
           isLoading: false,
         });
       });
+  }
+
+  componentWillUnmount() {
+    document.querySelector('header').classList.remove('is-hidden');
   }
 
   render() {
