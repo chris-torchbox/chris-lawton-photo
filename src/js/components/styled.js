@@ -21,6 +21,7 @@ export const Grid = styled.div`
 export const Card = styled(NavLink)`
     color: white;
     position: relative;
+    background-color: lightgrey;
 
     &:before {
         content: '';
