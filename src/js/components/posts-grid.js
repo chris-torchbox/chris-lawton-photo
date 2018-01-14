@@ -4,14 +4,16 @@ import { Card, CardContent, Title, Teaser, Date, Grid } from './styled';
 class PostsGrid extends Component {
   renderPosts() {
     return this.props.posts.map(post =>
-      (<Card to={post.slug} key={post.title}>
-        <div className="overlay" />
-        <CardContent>
-          <Title>{post.title}</Title>
-          <Teaser>{post.teaser}</Teaser>
-          <Date>{post.date}</Date>
-        </CardContent>
-       </Card>));
+      (
+        <Card to={post.slug} key={post.title}>
+          <div className="overlay" />
+          <CardContent>
+            <Title>{post.title}</Title>
+            <Teaser>{post.teaser}</Teaser>
+            <Date>{post.date}</Date>
+          </CardContent>
+        </Card>
+      ));
   }
 
   render() {
