@@ -1,6 +1,18 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
+export const HeaderMain = styled.header`
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 5px 15px;
+`;
+
+export const SiteTitle = styled(NavLink)`
+    font-family: 'azedobold', sans-serif;
+    font-size: 3rem;
+`;
+
 export const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
