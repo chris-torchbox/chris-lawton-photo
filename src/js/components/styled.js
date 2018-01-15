@@ -6,6 +6,10 @@ export const HeaderMain = styled.header`
     justify-content: space-between;
     display: flex;
     padding: 5px 15px;
+
+    &.is-hidden {
+        display: none;
+    }
 `;
 
 export const SiteTitle = styled(NavLink)`
