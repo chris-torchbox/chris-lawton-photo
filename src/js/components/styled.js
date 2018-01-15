@@ -55,6 +55,22 @@ export const Date = styled.p`
 
 `;
 
+// Post
+export const TextContainer = styled.div`
+    max-width: 650px;
+    margin: 4rem auto;
+`;
+
+export const PhotoContainer = styled.div`
+    max-width: 1066px;
+    margin: 4rem auto;
+`;
+
+export const GridTwo = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+`;
+
 export const Hero = styled.div`
   height: 100vh;
 
