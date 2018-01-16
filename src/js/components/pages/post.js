@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import { NavLink } from 'react-router-dom';
-import { Hero, HeroHeading, HeroSubHeading, TextContainer, PhotoContainer, BreakoutPhoto } from './../styled';
+import { Hero, HeroHeading, HeroSubHeading, TextContainer, PhotoContainer, BreakoutPhoto, GridTwo, GridThree } from './../styled';
 
 class Post extends Component {
   constructor() {
@@ -81,6 +81,29 @@ class Post extends Component {
           <img src="https://picsum.photos/1920/1080" />
         </BreakoutPhoto>
 
+        <TextContainer>
+          <p>{post.textOne}</p>
+        </TextContainer>
+
+        <PhotoContainer>
+          <GridTwo>
+            <img src={post.imgOne} />
+            <img src={post.imgOne} />
+          </GridTwo>
+        </PhotoContainer>
+
+        <TextContainer>
+          <h3>{post.subtitle}</h3>
+          <p>{post.textOne}</p>
+        </TextContainer>
+
+        <PhotoContainer>
+          <GridThree>
+            <img src={post.imgOne} />
+            <img src={post.imgOne} />
+            <img src={post.imgOne} />
+          </GridThree>
+        </PhotoContainer>
       </div>
     );
   }
