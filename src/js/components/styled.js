@@ -22,6 +22,18 @@ export const Grid = styled.div`
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
 `;
 
+export const GridTwo = styled.div`
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(calc(50% - 10px), 1fr));
+`;
+
+export const GridThree = styled.div`
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(calc(33% - 10px), 1fr));
+`;
+
 export const Card = styled(NavLink)`
     color: white;
     position: relative;
@@ -62,13 +74,8 @@ export const TextContainer = styled.div`
 `;
 
 export const PhotoContainer = styled.div`
-    max-width: 1066px;
+    max-width: 1060px;
     margin: 4rem auto;
-`;
-
-export const GridTwo = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
 `;
 
 export const Hero = styled.div`
