@@ -100,3 +100,12 @@ export const HeroSubHeading = styled.h2`
   color: white;
   z-index: 10;
 `;
+
+export const BreakoutPhoto = styled.div`
+    position: relative;
+    right: 50%;
+    left: 50%;
+    width: 100vw;
+    margin-right: -50vw;
+    margin-left: -50vw;
+`;

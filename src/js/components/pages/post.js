@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import { NavLink } from 'react-router-dom';
-import { Hero, HeroHeading, HeroSubHeading, TextContainer, PhotoContainer } from './../styled';
+import { Hero, HeroHeading, HeroSubHeading, TextContainer, PhotoContainer, BreakoutPhoto } from './../styled';
 
 class Post extends Component {
   constructor() {
@@ -77,6 +77,10 @@ class Post extends Component {
         <PhotoContainer>
           <img src={post.imgOne} />
         </PhotoContainer>
+        <BreakoutPhoto>
+          <img src="https://picsum.photos/1920/1080" />
+        </BreakoutPhoto>
+
       </div>
     );
   }
