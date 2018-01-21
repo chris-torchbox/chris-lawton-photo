@@ -80,7 +80,7 @@ export const PhotoContainer = styled.div`
 
 export const Hero = styled.div`
   height: 100vh;
-
+  color: white;
   background-size: cover;
   position: relative;
   display: flex;
@@ -99,13 +99,22 @@ export const Hero = styled.div`
 `;
 
 export const HeroHeading = styled.h1`
-  color: white;
   z-index: 10;
 `;
 
 export const HeroSubHeading = styled.h2`
+  z-index: 10;
+`;
+
+export const HeroTeaser = styled.h2`
+  z-index: 10;
   color: white;
   z-index: 10;
+  font-family: 'Cormorant', serif;
+  font-size: 32px;
+  font-weight: 200;
+  font-style: italic;
+  margin: 0;
 `;
 
 export const BreakoutPhoto = styled.div`
