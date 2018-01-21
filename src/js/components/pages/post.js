@@ -54,6 +54,13 @@ class Post extends Component {
       left: 20,
     };
 
+    function isRetina(first, second) {
+      if (window.devicePixelRatio >= 2) {
+        return second;
+      }
+      return first;
+    }
+
     return (
       <div>
         <Helmet>
@@ -75,7 +82,7 @@ class Post extends Component {
           <p>{post.textOne}</p>
         </TextContainer>
         <PhotoContainer>
-          <img src={post.imgOne} />
+          <img src={isRetina(post.imgOne1x, post.imgOne2x)} alt="" />
         </PhotoContainer>
         <BreakoutPhoto>
           <img src="https://picsum.photos/1920/1080" />
