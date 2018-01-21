@@ -14,7 +14,6 @@ class Post extends Component {
 
   componentDidMount() {
     document.querySelector('header').classList.add('is-hidden');
-    // const url = `./../../data/trips/.json`;
     const url = `http://localhost:8080/src/js/data/trips/${this.props.match.params.post}.json`;
 
     fetch(url)
