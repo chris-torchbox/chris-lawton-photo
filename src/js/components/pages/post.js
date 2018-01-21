@@ -85,7 +85,7 @@ class Post extends Component {
           <img src={isRetina(post.imgOne1x, post.imgOne2x)} alt="" />
         </PhotoContainer>
         <BreakoutPhoto>
-          <img src="https://picsum.photos/1920/1080" />
+          <img src="https://picsum.photos/1920/1080" alt="" />
         </BreakoutPhoto>
 
         <TextContainer>
