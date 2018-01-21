@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardContent, Title, Teaser, Date, Grid } from './styled';
+import { Card, CardContent, Title, Date, Grid } from './styled';
 
 class PostsGrid extends Component {
   renderPosts() {
@@ -9,7 +9,6 @@ class PostsGrid extends Component {
           <div className="overlay" />
           <CardContent>
             <Title>{post.title}</Title>
-            <Teaser>{post.teaser}</Teaser>
             <Date>{post.date}</Date>
           </CardContent>
         </Card>
