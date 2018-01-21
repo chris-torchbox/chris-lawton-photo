@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import { NavLink } from 'react-router-dom';
-import { Hero, HeroHeading, HeroSubHeading, TextContainer, PhotoContainer, BreakoutPhoto, GridTwo, GridThree } from './../styled';
+import { Hero, HeroHeading, HeroSubHeading, HeroTeaser, TextContainer, PhotoContainer, BreakoutPhoto, GridTwo, GridThree } from './../styled';
 
 class Post extends Component {
   constructor() {
@@ -67,6 +67,7 @@ class Post extends Component {
           </NavLink>
           <HeroHeading>{post.title}</HeroHeading>
           <HeroSubHeading>{post.country}</HeroSubHeading>
+          <HeroTeaser>{post.teaser}</HeroTeaser>
         </Hero>
 
         <TextContainer>
