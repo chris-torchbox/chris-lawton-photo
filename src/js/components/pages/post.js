@@ -92,25 +92,33 @@ class Post extends Component {
           <p>{post.textOne}</p>
         </TextContainer>
 
-        <PhotoContainer>
-          <GridTwo>
-            <img src={post.imgOne} />
-            <img src={post.imgOne} />
-          </GridTwo>
-        </PhotoContainer>
+        {post.gridTwo ? (
+          <PhotoContainer>
+            <GridTwo>
+              <img src={post.gridTwo.imgOne} alt="" />
+              <img src={post.gridTwo.imgOne} alt="" />
+            </GridTwo>
+          </PhotoContainer>
+        ) : (
+          <span className="is-hidden" />
+        )}
 
         <TextContainer>
           <h3>{post.subtitle}</h3>
           <p>{post.textOne}</p>
         </TextContainer>
 
-        <PhotoContainer>
-          <GridThree>
-            <img src={post.imgOne} />
-            <img src={post.imgOne} />
-            <img src={post.imgOne} />
-          </GridThree>
-        </PhotoContainer>
+        {post.gridThree ? (
+          <PhotoContainer>
+            <GridThree>
+              <img src={post.gridThree.imgOne} alt="" />
+              <img src={post.gridThree.imgTwo} alt="" />
+              <img src={post.gridThree.imgThree} alt="" />
+            </GridThree>
+          </PhotoContainer>
+        ) : (
+          <span className="is-hidden" />
+        )}
       </div>
     );
   }
