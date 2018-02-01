@@ -73,7 +73,6 @@ class Post extends Component {
             </svg>
           </NavLink>
           <HeroHeading>{post.title}</HeroHeading>
-          <HeroSubHeading>{post.country}</HeroSubHeading>
           <HeroTeaser>{post.teaser}</HeroTeaser>
         </Hero>
 
