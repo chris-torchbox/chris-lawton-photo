@@ -17,7 +17,8 @@ h6 {
 
 
 h1 {
-  @include responsive-font-size(45px, 80px);
+  @include responsive-font-size(45px, 120px);
+  letter-spacing: 5px;
 }
 
 h2 {
