@@ -95,15 +95,25 @@ export const Hero = styled.div`
     width: 100%;
     height: 100%;
     background: #00000070;
+    opacity: 1;
+    transition: opacity 0.25s ease;
+  }
+
+  &.is-revealed {
+      &:after {
+          opacity: 0;
+      }
   }
 `;
 
 export const HeroHeading = styled.h1`
   z-index: 10;
-`;
+  opacity: 1;
+  transition: opacity 0.25s ease;
 
-export const HeroSubHeading = styled.h2`
-  z-index: 10;
+  .is-revealed & {
+      opacity: 0;
+  }
 `;
 
 export const HeroTeaser = styled.h2`
@@ -115,6 +125,12 @@ export const HeroTeaser = styled.h2`
   font-weight: 200;
   font-style: italic;
   margin: 0;
+  opacity: 1;
+  transition: opacity 0.25s ease;
+
+  .is-revealed & {
+      opacity: 0;
+  }
 `;
 
 export const BreakoutPhoto = styled.div`
