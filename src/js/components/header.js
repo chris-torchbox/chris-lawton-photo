@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { HeaderMain, SiteTitle } from './styled';
+import { HeaderMain } from './styled/header-main';
+import { SiteTitle } from './styled/site-title';
 
 class Header extends Component {
   render() {

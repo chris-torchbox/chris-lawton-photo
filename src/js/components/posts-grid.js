@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { Card, CardContent, Title, Date, Grid } from './styled';
+import { Card, CardContent } from './styled/card';
+import { Title } from './styled/title';
+import { Date } from './styled/date';
+import { Grid } from './styled/grid';
 
 class PostsGrid extends Component {
   renderPosts() {
