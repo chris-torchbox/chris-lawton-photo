@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { Hero, HeroHeading, HeroTeaser } from './../styled/hero';
 import { TextContainer, PhotoContainer, BreakoutPhoto } from './../styled/container';
 import { GridTwo, GridThree } from './../styled/grid';
+import Questions from './../styled/questions';
 
 class Post extends Component {
   constructor() {
@@ -137,6 +138,8 @@ class Post extends Component {
         ) : (
           <span className="is-hidden" />
         )}
+        <Questions />
+
       </div>
     );
   }
