@@ -5,6 +5,7 @@ export const Card = styled(NavLink)`
 color: white;
 position: relative;
 background-color: lightgrey;
+background-size: contain;
 
 &:before {
     content: '';
@@ -13,11 +14,4 @@ background-color: lightgrey;
 }
 `;
 
-export const CardContent = styled.div`
-align-items: center;
-bottom: 20px;
-display: flex;
-position: absolute;
-flex-direction: column;
-width: 100%;
-`;
+export default Card;

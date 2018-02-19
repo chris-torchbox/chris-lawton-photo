@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const QuestionsWrapper = styled.div`
@@ -16,37 +16,35 @@ const QuestionTitle = styled.h5`
     font-size: 20px;
 `;
 
-class Questions extends Component {
-  render() {
-    return (
-      <QuestionsWrapper>
-        <div>
-          <QuestionTitle>Best View</QuestionTitle>
-          <p>Some text here</p>
-        </div>
-        <div>
-          <QuestionTitle>Most interetsing thing I learnt</QuestionTitle>
-          <p>Some text here</p>
-        </div>
-        <div>
-          <QuestionTitle>Favourite Moment</QuestionTitle>
-          <p>Some text here</p>
-        </div>
-        <div>
-          <QuestionTitle>Most enjoyable meal</QuestionTitle>
-          <p>Some text here</p>
-        </div>
-        <div>
-          <QuestionTitle>Biggest Surprise</QuestionTitle>
-          <p>Some text here</p>
-        </div>
-        <div>
-          <QuestionTitle>Top tip</QuestionTitle>
-          <p>Some text here</p>
-        </div>
-      </QuestionsWrapper>
-    );
-  }
+function Questions() {
+  return (
+    <QuestionsWrapper>
+      <div>
+        <QuestionTitle>Best View</QuestionTitle>
+        <p>Some text here</p>
+      </div>
+      <div>
+        <QuestionTitle>Most interetsing thing I learnt</QuestionTitle>
+        <p>Some text here</p>
+      </div>
+      <div>
+        <QuestionTitle>Favourite Moment</QuestionTitle>
+        <p>Some text here</p>
+      </div>
+      <div>
+        <QuestionTitle>Most enjoyable meal</QuestionTitle>
+        <p>Some text here</p>
+      </div>
+      <div>
+        <QuestionTitle>Biggest Surprise</QuestionTitle>
+        <p>Some text here</p>
+      </div>
+      <div>
+        <QuestionTitle>Top tip</QuestionTitle>
+        <p>Some text here</p>
+      </div>
+    </QuestionsWrapper>
+  );
 }
 
 export default Questions;
