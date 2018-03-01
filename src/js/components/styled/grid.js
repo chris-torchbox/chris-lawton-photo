@@ -1,8 +1,10 @@
 import styled from 'styled-components';
+import { mq } from './media-queries';
 
 export const Grid = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    ${mq.mob`grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));`}
+    ${mq.handheld`grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));`}
 `;
 
 export const GridTwo = styled.div`
