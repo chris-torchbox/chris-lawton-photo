@@ -18,12 +18,6 @@ const postsData = [
     thumbnail: 'https://s3.us-east-2.amazonaws.com/clp-covers/berlin.jpg',
   },
   {
-    title: 'Bristol',
-    slug: '/bristol/',
-    date: 'January 6th 2018',
-    thumbnail: 'https://s3.us-east-2.amazonaws.com/clp-covers/bristol.jpg',
-  },
-  {
     title: 'Copenhagen',
     slug: '/copenhagen/',
     date: 'March 18th 2016',
@@ -36,12 +30,6 @@ const postsData = [
     thumbnail: 'https://s3.us-east-2.amazonaws.com/clp-covers/grand-canyon.jpg',
   },
   {
-    title: 'Hereford',
-    slug: '/hereford/',
-    date: 'April 20th 2017',
-    thumbnail: 'https://s3.us-east-2.amazonaws.com/clp-covers/hereford.jpg',
-  },
-  {
     title: 'Joch',
     slug: '/joch/',
     date: 'April 20th 2017',
@@ -52,6 +40,12 @@ const postsData = [
     slug: '/lacanau/',
     date: 'April 20th 2017',
     thumbnail: 'https://s3.us-east-2.amazonaws.com/clp-covers/lacanau.jpg',
+  },
+  {
+    title: 'Priors Wood',
+    slug: '/priors-wood/',
+    date: 'April 20th 2017',
+    thumbnail: 'https://s3.us-east-2.amazonaws.com/clp-covers/priors-wood.jpg',
   },
   {
     title: 'NYC',
