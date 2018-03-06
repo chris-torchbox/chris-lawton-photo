@@ -11,3 +11,5 @@ export const SiteTitle = styled(NavLink)`
         font-size: 40px;
     `}
 `;
+
+export default SiteTitle;

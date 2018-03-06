@@ -4,3 +4,5 @@ export const Date = styled.p`
     font-family: 'Lato', serif;
     font-size: 12px;
 `;
+
+export default Date;

@@ -13,3 +13,5 @@ export const mq = {
     }
   `,
 };
+
+export default mq;

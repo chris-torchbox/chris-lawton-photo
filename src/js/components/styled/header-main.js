@@ -10,3 +10,5 @@ export const HeaderMain = styled.header`
         display: none;
     }
 `;
+
+export default HeaderMain;
