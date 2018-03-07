@@ -47,10 +47,6 @@ class Post extends Component {
     }
     const post = this.state.tripData;
 
-    const divStyle = {
-      backgroundImage: `url('${post.hero}')`,
-    };
-
     function isRetina(first, second) {
       if (window.devicePixelRatio >= 2) {
         return second;
@@ -67,7 +63,7 @@ class Post extends Component {
         <Helmet>
           <title>{post.title} | Chris Lawton Photography</title>
         </Helmet>
-        <Hero style={divStyle} className="hero">
+        <Hero style={{ backgroundImage: `url(${post.hero})` }} className="hero">
           <NavLink to="/">
             <Arrow />
           </NavLink>
