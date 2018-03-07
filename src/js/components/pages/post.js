@@ -69,7 +69,7 @@ class Post extends Component {
           </NavLink>
           <HeroHeading>{post.title}</HeroHeading>
           <HeroTeaser>{post.teaser}</HeroTeaser>
-          <div onClick={revealHero}>
+          <div onClick={revealHero} onKeyDown={this.revealHero} tabIndex="0" role="button" >
             <Eye />
           </div>
         </Hero>
