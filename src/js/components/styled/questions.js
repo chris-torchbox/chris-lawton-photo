@@ -16,32 +16,33 @@ const QuestionTitle = styled.h5`
     font-size: 20px;
 `;
 
-function Questions() {
+function Questions(props) {
+  const answer = props.answers;
   return (
     <QuestionsWrapper>
       <div>
         <QuestionTitle>Best View</QuestionTitle>
-        <p>Some text here</p>
+        <p>{answer.bestView}</p>
       </div>
       <div>
         <QuestionTitle>Most interetsing thing I learnt</QuestionTitle>
-        <p>Some text here</p>
+        <p>{answer.interestingThing}</p>
       </div>
       <div>
         <QuestionTitle>Favourite Moment</QuestionTitle>
-        <p>Some text here</p>
+        <p>{answer.favouriteMoment}</p>
       </div>
       <div>
         <QuestionTitle>Most enjoyable meal</QuestionTitle>
-        <p>Some text here</p>
+        <p>{answer.enjoyableMeal}</p>
       </div>
       <div>
         <QuestionTitle>Biggest Surprise</QuestionTitle>
-        <p>Some text here</p>
+        <p>{answer.biggestSurprise}</p>
       </div>
       <div>
         <QuestionTitle>Top tip</QuestionTitle>
-        <p>Some text here</p>
+        <p>{answer.topTip}</p>
       </div>
     </QuestionsWrapper>
   );

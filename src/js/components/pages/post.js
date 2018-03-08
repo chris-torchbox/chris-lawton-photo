@@ -116,7 +116,7 @@ class Post extends Component {
         ) : (
           <span className="is-hidden" />
         )}
-        <Questions />
+        <Questions answers={post.questions} />
 
       </div>
     );
