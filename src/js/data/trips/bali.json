@@ -1,0 +1,43 @@
+{
+    "title": "",
+    "country": "",
+    "teaser": "",
+    "date": "",
+    "textOne": "",
+    "textTwo": "",
+    "textThree": "",
+    "questions": {
+      "bestView": "",
+      "interestingThing": "",
+      "favouriteMoment": "",
+      "enjoyableMeal": "",
+      "biggestSurprise": "",
+      "topTip": ""
+    },
+    "hero": "",
+    "gridTwoFirst": {
+      "imgOne": "",
+      "imgTwo": ""
+    },
+    "gridOneFirst": "",
+    "gridSix": {
+      "imgOne": "",
+      "imgTwo": "",
+      "imgThree": "",
+      "imgFour": "",
+      "imgFive": "",
+      "imgSix": ""
+    },
+    "breakoutFirst": "",
+    "gridTwoSecond": {
+      "imgOne": "",
+      "imgTwo": ""
+    },
+    "breakoutSecond": "",
+    "gridThree": {
+      "imgOne": "",
+      "imgTwo": "",
+      "imgThree": ""
+    },
+    "gridOneSecond": ""
+}
