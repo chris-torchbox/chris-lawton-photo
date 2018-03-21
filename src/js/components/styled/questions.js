@@ -25,7 +25,7 @@ function Questions(props) {
         <p>{answer.bestView}</p>
       </div>
       <div>
-        <QuestionTitle>Most interetsing thing I learnt</QuestionTitle>
+        <QuestionTitle>Most interesting thing I learnt</QuestionTitle>
         <p>{answer.interestingThing}</p>
       </div>
       <div>
