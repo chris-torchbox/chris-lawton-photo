@@ -1,0 +1,43 @@
+{
+  "title": "Copenhagen",
+  "country": "Denmark",
+  "teaser": "Here's why Copenhagen is a paradise for cyclists",
+  "date": "January 6th 2018",
+  "textOne": "text one",
+  "textTwo": "text two",
+  "textThree": "text three",
+  "questions": {
+    "bestView": "Rundetaarn, or the round tower, is the oldest functioning observatory in Europe and the view from the top is unmissable.",
+    "interestingThing": "It's the happiest place in the world",
+    "favouriteMoment": "This is the favourite moment",
+    "enjoyableMeal": "Yummers",
+    "biggestSurprise": "wow!",
+    "topTip": "Don't go in November - Tivoli Gardens will be shut"
+  },
+  "hero": "http://res.cloudinary.com/chrislawton/image/upload/fl_progressive,q_40/v1521657125/copenhagen/bikes.jpg",
+  "gridTwoFirst": {
+    "imgOne": "copenhagen/citroen.jpg",
+    "imgTwo": "copenhagen/graffiti.jpg"
+  },
+  "gridOneFirst": "copenhagen/breakfast.jpg",
+  "gridSix": {
+    "imgOne": "copenhagen/cuisine.jpg",
+    "imgTwo": "copenhagen/leaf.jpg",
+    "imgThree": "copenhagen/sweet-treats.jpg",
+    "imgFour": "copenhagen/autumn-leaves.jpg",
+    "imgFive": "copenhagen/locks.jpg",
+    "imgSix": "copenhagen/seats.jpg"
+  },
+  "breakoutFirst": "copenhagen/bike-at-sunset.jpg",
+  "gridTwoSecond": {
+    "imgOne": "copenhagen/nyhavn-night.jpg",
+    "imgTwo": "copenhagen/reflections.jpg"
+  },
+  "breakoutSecond": "copenhagen/pastry.jpg",
+  "gridThree": {
+    "imgOne": "copenhagen/rotunda.jpg",
+    "imgTwo": "copenhagen/alleyway.jpg",
+    "imgThree": "copenhagen/nyhavn-day.jpg"
+  },
+  "gridOneSecond": "copenhagen/skyline.jpg"
+}
