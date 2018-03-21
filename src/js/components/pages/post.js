@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import { NavLink } from 'react-router-dom';
+import { Image, CloudinaryContext } from 'cloudinary-react';
 import { Hero, HeroHeading, HeroTeaser } from './../styled/hero';
 import { TextContainer, PhotoContainer, BreakoutPhoto } from './../styled/container';
 import { GridTwo, GridThree } from './../styled/grid';
@@ -47,13 +48,6 @@ class Post extends Component {
     }
     const post = this.state.tripData;
 
-    function isRetina(first, second) {
-      if (window.devicePixelRatio >= 2) {
-        return second;
-      }
-      return first;
-    }
-
     function revealHero() {
       document.querySelector('.hero').classList.toggle('is-revealed');
     }
@@ -63,61 +57,138 @@ class Post extends Component {
         <Helmet>
           <title>{post.title} | Chris Lawton Photography</title>
         </Helmet>
-        <Hero style={{ backgroundImage: `url(${post.hero})` }} className="hero">
-          <NavLink to="/">
-            <Arrow />
-          </NavLink>
-          <HeroHeading>{post.title}</HeroHeading>
-          <HeroTeaser>{post.teaser}</HeroTeaser>
-          <div onClick={revealHero} onKeyDown={this.revealHero} tabIndex="0" role="button" >
-            <Eye />
-          </div>
-        </Hero>
 
-        <TextContainer>
-          <h3>{post.subtitle}</h3>
-          <p>{post.textOne}</p>
-        </TextContainer>
-        <PhotoContainer>
-          <img src={isRetina(post.imgOne1x, post.imgOne2x)} alt="" />
-        </PhotoContainer>
-        <BreakoutPhoto>
-          <img src="https://picsum.photos/1920/1080" alt="" />
-        </BreakoutPhoto>
+        <CloudinaryContext cloudName="chrislawton" quality="40" flags="progressive">
 
-        <TextContainer>
-          <p>{post.textOne}</p>
-        </TextContainer>
+          <Hero style={{ backgroundImage: `url(${post.hero})` }} className="hero">
+            <NavLink to="/">
+              <Arrow />
+            </NavLink>
+            <HeroHeading>{post.title}</HeroHeading>
+            <HeroTeaser>{post.teaser}</HeroTeaser>
+            <div onClick={revealHero} onKeyDown={this.revealHero} tabIndex="0" role="button" >
+              <Eye />
+            </div>
+          </Hero>
 
-        {post.gridTwo ? (
-          <PhotoContainer>
-            <GridTwo>
-              <img src={post.gridTwo.imgOne} alt="" />
-              <img src={post.gridTwo.imgOne} alt="" />
-            </GridTwo>
-          </PhotoContainer>
-        ) : (
-          <span className="is-hidden" />
-        )}
+          <TextContainer>
+            <h3>{post.subtitle}</h3>
+            <p>{post.textOne}</p>
+          </TextContainer>
 
-        <TextContainer>
-          <h3>{post.subtitle}</h3>
-          <p>{post.textOne}</p>
-        </TextContainer>
+          {post.gridTwoFirst ? (
+            <PhotoContainer>
+              <CloudinaryContext width="1050">
+                <GridTwo>
+                  <Image publicId={post.gridTwoFirst.imgOne} />
+                  <Image publicId={post.gridTwoFirst.imgTwo} />
+                </GridTwo>
+              </CloudinaryContext>
+            </PhotoContainer>
+          ) : (
+            <span className="is-hidden" />
+          )}
 
-        {post.gridThree ? (
-          <PhotoContainer>
-            <GridThree>
-              <img src={post.gridThree.imgOne} alt="" />
-              <img src={post.gridThree.imgTwo} alt="" />
-              <img src={post.gridThree.imgThree} alt="" />
-            </GridThree>
-          </PhotoContainer>
-        ) : (
-          <span className="is-hidden" />
-        )}
-        <Questions answers={post.questions} />
+          <TextContainer>
+            <p>{post.textOne}</p>
+          </TextContainer>
 
+          {post.gridOneFirst ? (
+            <PhotoContainer>
+              <CloudinaryContext width="2120">
+                <Image publicId={post.gridOneFirst} />
+              </CloudinaryContext>
+            </PhotoContainer>
+          ) : (
+            <span className="is-hidden" />
+          )}
+
+          {post.gridSix ? (
+            <PhotoContainer>
+              <CloudinaryContext width="692">
+                <GridThree>
+                  <Image publicId={post.gridSix.imgOne} />
+                  <Image publicId={post.gridSix.imgTwo} />
+                  <Image publicId={post.gridSix.imgThree} />
+                  <Image publicId={post.gridSix.imgFour} />
+                  <Image publicId={post.gridSix.imgFive} />
+                  <Image publicId={post.gridSix.imgSix} />
+                </GridThree>
+              </CloudinaryContext>
+            </PhotoContainer>
+          ) : (
+            <span className="is-hidden" />
+          )}
+
+          <TextContainer>
+            <p>{post.textOne}</p>
+          </TextContainer>
+
+          {post.breakoutFirst ? (
+            <BreakoutPhoto>
+              <Image publicId={post.breakoutFirst} />
+            </BreakoutPhoto>
+          ) : (
+            <span className="is-hidden" />
+          )}
+
+          <TextContainer>
+            <h3>{post.subtitle}</h3>
+            <p>{post.textOne}</p>
+          </TextContainer>
+
+          {post.gridTwoSecond ? (
+            <PhotoContainer>
+              <CloudinaryContext width="1050">
+                <GridTwo>
+                  <Image publicId={post.gridTwoSecond.imgOne} />
+                  <Image publicId={post.gridTwoSecond.imgTwo} />
+                </GridTwo>
+              </CloudinaryContext>
+            </PhotoContainer>
+          ) : (
+            <span className="is-hidden" />
+          )}
+
+          <TextContainer>
+            <h3>{post.subtitle}</h3>
+            <p>{post.textOne}</p>
+          </TextContainer>
+
+          {post.breakoutSecond ? (
+            <BreakoutPhoto>
+              <Image publicId={post.breakoutSecond} />
+            </BreakoutPhoto>
+          ) : (
+            <span className="is-hidden" />
+          )}
+
+          {post.gridThree ? (
+            <PhotoContainer>
+              <CloudinaryContext width="692">
+                <GridThree>
+                  <Image publicId={post.gridThree.imgOne} />
+                  <Image publicId={post.gridThree.imgTwo} />
+                  <Image publicId={post.gridThree.imgThree} />
+                </GridThree>
+              </CloudinaryContext>
+            </PhotoContainer>
+          ) : (
+            <span className="is-hidden" />
+          )}
+
+          {post.gridOneSecond ? (
+            <PhotoContainer>
+              <CloudinaryContext width="2120">
+                <Image publicId={post.gridOneSecond} />
+              </CloudinaryContext>
+            </PhotoContainer>
+          ) : (
+            <span className="is-hidden" />
+          )}
+
+          <Questions answers={post.questions} />
+        </CloudinaryContext>
       </div>
     );
   }
