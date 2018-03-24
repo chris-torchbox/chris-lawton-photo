@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import { NavLink } from 'react-router-dom';
 import { Image, CloudinaryContext } from 'cloudinary-react';
+import BackgroundImage from 'react-background-image-loader';
 import { Hero, HeroHeading, HeroTeaser } from './../styled/hero';
 import { TextContainer, PhotoContainer, BreakoutPhoto } from './../styled/container';
 import { GridTwo, GridThree } from './../styled/grid';
@@ -60,7 +61,7 @@ class Post extends Component {
 
         <CloudinaryContext cloudName="chrislawton" quality="40" flags="progressive">
 
-          <Hero style={{ backgroundImage: `url(${post.hero})` }} className="hero">
+          <BackgroundImage src={post.hero.main} placeholder={post.hero.placeholder} className="hero">
             <NavLink to="/">
               <Arrow />
             </NavLink>
@@ -69,7 +70,7 @@ class Post extends Component {
             <div onClick={revealHero} onKeyDown={this.revealHero} tabIndex="0" role="button" >
               <Eye />
             </div>
-          </Hero>
+          </BackgroundImage>
 
           <TextContainer>
             <h3>{post.subtitle}</h3>
