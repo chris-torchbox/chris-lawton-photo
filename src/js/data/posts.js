@@ -60,6 +60,12 @@ const postsData = [
     thumbnail: 'paris.jpg',
   },
   {
+    title: 'Pismo',
+    slug: '/pismo/',
+    date: 'April 20th 2017',
+    thumbnail: 'pismo.jpg',
+  },
+  {
     title: 'Reykjavik',
     slug: '/reykjavik/',
     date: 'April 20th 2017',
