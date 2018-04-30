@@ -1,18 +1,17 @@
 {
     "title": "Barcelona",
     "country": "Spain",
-    "teaser": "",
-    "date": "",
+    "teaser": "Cusine & Culture in the Catalan capital",
     "textOne": "",
     "textTwo": "",
     "textThree": "",
     "questions": {
-      "bestView": "",
-      "interestingThing": "",
-      "favouriteMoment": "",
-      "enjoyableMeal": "",
-      "biggestSurprise": "",
-      "topTip": ""
+      "bestView": "Looking back over Barcelona from Montjuïc Castle (take the cable car up for some great views en route).",
+      "interestingThing": "The beaches are artificial. They were added for the 1992 Olympics.",
+      "favouriteMoment": "Getting lost in the winding alleys of the Gothic Quarter.",
+      "enjoyableMeal": "Eating Tapas and drinking red wine late in to the night.",
+      "biggestSurprise": "How easy it is to get around on foot - public transport was used sparingly.",
+      "topTip": "Stroll Gaudi’s Parc Guell (book tickets in advance)"
     },
     "hero": {
       "main": "http://res.cloudinary.com/chrislawton/image/upload/v1521925488/barcelona/park-guell.jpg",

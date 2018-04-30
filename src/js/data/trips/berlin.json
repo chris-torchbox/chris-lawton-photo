@@ -1,18 +1,17 @@
 {
     "title": "Berlin",
     "country": "Germany",
-    "teaser": "",
-    "date": "",
+    "teaser": "The (actual) city that doesn't sleep",
     "textOne": "",
     "textTwo": "",
     "textThree": "",
     "questions": {
-      "bestView": "",
-      "interestingThing": "",
-      "favouriteMoment": "",
-      "enjoyableMeal": "",
-      "biggestSurprise": "",
-      "topTip": ""
+      "bestView": "Not necessarily enjoyable, but wandering through the Jewish Memorial is an experience like no other.",
+      "interestingThing": "Cleaning graffiti costs the city €35 million a per year.",
+      "favouriteMoment": "Watching the 2014 World Cup final in a warehouse. A night to remember.",
+      "enjoyableMeal": "Dare I say I secretly enjoyed the Currywurst? Maybe it’s the German beer talking.",
+      "biggestSurprise": "You can do whatever you want, whenever you want.",
+      "topTip": "Grab some beers from your local späti and sit on the bench outside to take it all in."
     },
     "hero": {
       "main": "http://res.cloudinary.com/chrislawton/image/upload/v1521926438/berlin/faces.jpg",

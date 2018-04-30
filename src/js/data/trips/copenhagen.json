@@ -1,18 +1,17 @@
 {
   "title": "Copenhagen",
   "country": "Denmark",
-  "teaser": "Here's why Copenhagen is a paradise for cyclists",
-  "date": "January 6th 2018",
+  "teaser": "A cyclists paradise",
   "textOne": "text one",
   "textTwo": "text two",
   "textThree": "text three",
   "questions": {
     "bestView": "Rundetaarn, or the round tower, is the oldest functioning observatory in Europe and the view from the top is unmissable.",
-    "interestingThing": "It's the happiest place in the world",
-    "favouriteMoment": "This is the favourite moment",
-    "enjoyableMeal": "Yummers",
-    "biggestSurprise": "wow!",
-    "topTip": "Don't go in November - Tivoli Gardens will be shut"
+    "interestingThing": "It's the happiest place in the world.",
+    "favouriteMoment": "Eating (huge) danish pastries whilst watching the changing of the guard.",
+    "enjoyableMeal": "Breakfast served tapas style (see pic above).",
+    "biggestSurprise": "How flat it is. No wonder everyone cycles everywhere!",
+    "topTip": "Don't go in November - Tivoli Gardens will be shut. No prizes for guessing how I found out."
   },
   "hero": {
     "main": "http://res.cloudinary.com/chrislawton/image/upload/fl_progressive,q_40/v1521657125/copenhagen/bikes.jpg",

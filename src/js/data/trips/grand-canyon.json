@@ -1,18 +1,17 @@
 {
     "title": "Grand Canyon",
     "country": "USA",
-    "teaser": "",
-    "date": "",
+    "teaser": "A day trip to one of the worlds natural wonders.",
     "textOne": "",
     "textTwo": "",
     "textThree": "",
     "questions": {
-      "bestView": "",
-      "interestingThing": "",
-      "favouriteMoment": "",
+      "bestView": "Taking a helicopter over the Grand Canyon. It’s the only way to see it.",
+      "interestingThing": "The deepest point in the canyon is over a mile deep.",
+      "favouriteMoment": "Controlled forest fires as we came into land in Arizona made for some pretty spectacular views of the forest.",
       "enjoyableMeal": "",
-      "biggestSurprise": "",
-      "topTip": ""
+      "biggestSurprise": "Just how vast it is, no picture will ever re-create that feeling.",
+      "topTip": "Take warm clothes - the Grand Canyon creates it’s own weather."
     },
     "hero": {
       "main": "http://res.cloudinary.com/chrislawton/image/upload/v1522181741/grand-canyon/hoover-dam.jpg",
