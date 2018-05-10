@@ -14,7 +14,10 @@
       "biggestSurprise": "",
       "topTip": ""
     },
-    "hero": "",
+    "hero": {
+      "main": "",
+      "placeholder": ""
+    },
     "gridTwoFirst": {
       "imgOne": "",
       "imgTwo": ""
