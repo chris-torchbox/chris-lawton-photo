@@ -24,6 +24,12 @@ const postsData = [
     thumbnail: 'copenhagen.jpg',
   },
   {
+    title: 'Croatia',
+    slug: '/croatia/',
+    date: 'March 18th 2016',
+    thumbnail: 'croatia.jpg',
+  },
+  {
     title: 'Grand Canyon',
     slug: '/grand-canyon/',
     date: 'April 20th 2017',
