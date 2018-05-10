@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import { NavLink } from 'react-router-dom';
 import { Image, CloudinaryContext } from 'cloudinary-react';
 import BackgroundImage from 'react-background-image-loader';
+import { DiscussionEmbed } from 'disqus-react';
 import { Hero, HeroHeading, HeroTeaser } from './../styled/hero';
 import { TextContainer, PhotoContainer, BreakoutPhoto } from './../styled/container';
 import { GridTwo, GridThree } from './../styled/grid';
@@ -189,6 +190,10 @@ class Post extends Component {
           )}
 
           <Questions answers={post.questions} />
+
+          <TextContainer>
+            <DiscussionEmbed shortname="chrislawton" />
+          </TextContainer>
         </CloudinaryContext>
       </div>
     );
