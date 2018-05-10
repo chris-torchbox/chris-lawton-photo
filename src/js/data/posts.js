@@ -48,6 +48,12 @@ const postsData = [
     thumbnail: 'lacanau.jpg',
   },
   {
+    title: 'Las Vegas',
+    slug: '/las-vegas/',
+    date: 'April 20th 2017',
+    thumbnail: 'las-vegas.jpg',
+  },
+  {
     title: 'Priors Wood',
     slug: '/priors-wood/',
     date: 'April 20th 2017',
