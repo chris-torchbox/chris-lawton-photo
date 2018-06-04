@@ -74,7 +74,6 @@ class Post extends Component {
           </BackgroundImage>
 
           <TextContainer>
-            <h3>{post.subtitle}</h3>
             <p>{post.textOne}</p>
           </TextContainer>
 
@@ -91,10 +90,6 @@ class Post extends Component {
             <span className="is-hidden" />
           )}
 
-          <TextContainer>
-            <p>{post.textOne}</p>
-          </TextContainer>
-
           {post.gridOneFirst ? (
             <PhotoContainer>
               <CloudinaryContext width="2120">
@@ -104,6 +99,10 @@ class Post extends Component {
           ) : (
             <span className="is-hidden" />
           )}
+
+          <TextContainer>
+            <p>{post.textTwo}</p>
+          </TextContainer>
 
           {post.gridSix ? (
             <PhotoContainer>
@@ -123,7 +122,7 @@ class Post extends Component {
           )}
 
           <TextContainer>
-            <p>{post.textOne}</p>
+            <p>{post.textThree}</p>
           </TextContainer>
 
           {post.breakoutFirst ? (
@@ -133,11 +132,6 @@ class Post extends Component {
           ) : (
             <span className="is-hidden" />
           )}
-
-          <TextContainer>
-            <h3>{post.subtitle}</h3>
-            <p>{post.textOne}</p>
-          </TextContainer>
 
           {post.gridTwoSecond ? (
             <PhotoContainer>
@@ -153,8 +147,7 @@ class Post extends Component {
           )}
 
           <TextContainer>
-            <h3>{post.subtitle}</h3>
-            <p>{post.textOne}</p>
+            <p>{post.textFour}</p>
           </TextContainer>
 
           {post.breakoutSecond ? (
