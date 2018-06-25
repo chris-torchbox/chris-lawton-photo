@@ -1,18 +1,19 @@
 {
     "title": "Croatia",
     "country": "Croatia",
-    "teaser": "",
-    "date": "",
-    "textOne": "",
-    "textTwo": "",
-    "textThree": "",
+    "teaser": "Beautiful Brač & it's neighbouring islands",
+    "date": "August 2017",
+    "textOne": "After a flight, a drive and a short ferry trip we arrived at our apartment in Split for a week of celebration (a wedding) and sight-seeing. It was my first time in Croatia and i'd heard a lot of good things so I was looking forward to seeing what all the talk was about.",
+    "textTwo": "In the days before the wedding we took a boat out in the morning to do some exploring.  The Adriatic sea has some of the clearest, calmest waters i've even seen. This is probably due to the beaches being pebble instead of sand, so if you're going for a swim it makes for a wobbly walk in but it's totally worth it.",
+    "textThree": "A day trip of island hopping took us to the blue cave on Biševo (a cave lit up by the natural light that enters from below) and Hvar, which provided some history and great views from the hilltop fortress.",
+    "textFour": "Croatia is never somewhere that used to spring to mind when I used to think of holiday destinations in Europe. Now whenever someone asks, it's right up there at the top of my recommendations list.",
     "questions": {
-      "bestView": "",
-      "interestingThing": "",
-      "favouriteMoment": "",
-      "enjoyableMeal": "",
-      "biggestSurprise": "",
-      "topTip": ""
+      "bestView": "I mentioned it earler, but the hilltop fortress in Hvar provides some stunning views back out towards the Adriatic sea. It's worth the climb, honest. ",
+      "interestingThing": "Zlatni Rat Beach in Bol is the most photographed beach in Croatia. Somewhat ironically, I didn't take a single photo of it.",
+      "favouriteMoment": "Cruising out on the calm waters when we hired the boat, the water looked so silky smooth.",
+      "enjoyableMeal": "Not traditionally Croatian cuisine, but I had the most incredible steak at a restaurant by the waterfront in Brač.",
+      "biggestSurprise": "Heading home on the island hopping day trip we came across a pod of dolphins swimming of in to the sunset. Serious film moment.",
+      "topTip": "If you have some, take jelly shoes. It makes entering/exiting the sea a lot more graceful."
     },
     "hero": {
       "main": "http://res.cloudinary.com/chrislawton/image/upload/v1525971610/croatia/rope.jpg",
