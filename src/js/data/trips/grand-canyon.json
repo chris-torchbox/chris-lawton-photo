@@ -2,9 +2,10 @@
     "title": "Grand Canyon",
     "country": "USA",
     "teaser": "A day trip to one of the worlds natural wonders.",
-    "textOne": "",
-    "textTwo": "",
-    "textThree": "",
+    "textOne": "The morning after we arrived in Vegas, we had a trip booked to the Grand Canyon. It involved an incredibly early (pre-sunrise) start, a bus journey to a local airport and a flight over to the South Rim.",
+    "textTwo": "We were walking across the runway over to the plane just as the sun was rising. The flight over to the South Rim provided some great views of the Hoover Dam, Lake Mead,the Mojave Desert and the Colorado River. It was a photographers dream being able to see the earth from that perspective, and the sunrise made it even more spcial.",
+    "textThree": "As we came into land in Arizona, the pilot mentioned that there were some local controlled forest fires in the woods. I took a look at the window and instinctively grabbed my camera and started shooting.",
+    "textFour": "We treated ourselves to a helicopter trip over the Grand Canyon and in hindsight I'm so glad we did as it's the only way to see it. We'd walked around a couple of the paths prior to the flight, but nothing compares to seeing it from above. For me, it put in perspective how vast the it is and how the canyon offers a visual richness that simply cannot be found elsewhere on earth.",
     "questions": {
       "bestView": "Taking a helicopter over the Grand Canyon. It’s the only way to see it.",
       "interestingThing": "The deepest point in the canyon is over a mile deep.",
@@ -30,12 +31,12 @@
       "imgFive": "grand-canyon/tree.jpg",
       "imgSix": "grand-canyon/road-diagonal.jpg"
     },
-    "breakoutFirst": "grand-canyon/pilot.jpg",
+    "breakoutFirst": "grand-canyon/trees.jpg",
     "gridTwoSecond": {
       "imgOne": "grand-canyon/water.jpg",
       "imgTwo": "grand-canyon/road-trees.jpg"
     },
-    "breakoutSecond": "grand-canyon/trees.jpg",
+    "breakoutSecond": "grand-canyon/pilot.jpg",
     "gridThree": {
       "imgOne": "grand-canyon/river-three.jpg",
       "imgTwo": "grand-canyon/wheel.jpg",
