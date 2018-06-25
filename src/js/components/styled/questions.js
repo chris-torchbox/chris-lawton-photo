@@ -20,30 +20,59 @@ function Questions(props) {
   const answer = props.answers;
   return (
     <QuestionsWrapper>
-      <div>
-        <QuestionTitle>Best View</QuestionTitle>
-        <p>{answer.bestView}</p>
-      </div>
-      <div>
-        <QuestionTitle>Most interesting thing I learnt</QuestionTitle>
-        <p>{answer.interestingThing}</p>
-      </div>
-      <div>
-        <QuestionTitle>Favourite Moment</QuestionTitle>
-        <p>{answer.favouriteMoment}</p>
-      </div>
-      <div>
-        <QuestionTitle>Most enjoyable meal</QuestionTitle>
-        <p>{answer.enjoyableMeal}</p>
-      </div>
-      <div>
-        <QuestionTitle>Biggest Surprise</QuestionTitle>
-        <p>{answer.biggestSurprise}</p>
-      </div>
-      <div>
-        <QuestionTitle>Top tip</QuestionTitle>
-        <p>{answer.topTip}</p>
-      </div>
+      {answer.bestView ? (
+        <div>
+          <QuestionTitle>Best View</QuestionTitle>
+          <p>{answer.bestView}</p>
+        </div>
+      ) : (
+        <div />
+      )}
+
+      {answer.interestingThing ? (
+        <div>
+          <QuestionTitle>Most interesting thing I learnt</QuestionTitle>
+          <p>{answer.interestingThing}</p>
+        </div>
+      ) : (
+        <div />
+      )}
+
+      {answer.favouriteMoment ? (
+        <div>
+          <QuestionTitle>Favourite Moment</QuestionTitle>
+          <p>{answer.favouriteMoment}</p>
+        </div>
+      ) : (
+        <div />
+      )}
+
+      {answer.enjoyableMeal ? (
+        <div>
+          <QuestionTitle>Most enjoyable meal</QuestionTitle>
+          <p>{answer.enjoyableMeal}</p>
+        </div>
+      ) : (
+        <div />
+      )}
+
+      {answer.biggestSurprise ? (
+        <div>
+          <QuestionTitle>Biggest Surprise</QuestionTitle>
+          <p>{answer.biggestSurprise}</p>
+        </div>
+      ) : (
+        <div />
+      )}
+
+      {answer.topTip ? (
+        <div>
+          <QuestionTitle>Top tip</QuestionTitle>
+          <p>{answer.topTip}</p>
+        </div>
+      ) : (
+        <div />
+      )}
     </QuestionsWrapper>
   );
 }
