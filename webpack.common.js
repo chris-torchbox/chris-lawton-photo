@@ -2,7 +2,6 @@ const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
-const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   context: path.resolve(__dirname, './src'),
@@ -57,9 +56,5 @@ module.exports = {
 
   plugins: [
     new ExtractTextPlugin('[name].min.css'),
-    new Dotenv({
-      path: './.env', // Path to .env file (this is the default)
-      safe: true, // load .env.example (defaults to "false" which does not use dotenv-safe)
-    }),
   ],
 };
