@@ -3,12 +3,17 @@ import { css } from 'styled-components';
 
 export const mq = {
   mob: (...args) => css`
-      @media (min-width: 400px) {
-        ${css(...args)}
-      }
-    `,
+    @media (min-width: 400px) {
+      ${css(...args)}
+    }
+  `,
   handheld: (...args) => css`
     @media (min-width: 650px) {
+      ${css(...args)}
+    }
+  `,
+  dekstop: (...args) => css`
+    @media (min-width: 1400px) {
       ${css(...args)}
     }
   `,

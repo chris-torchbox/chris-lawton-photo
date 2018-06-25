@@ -5,6 +5,7 @@ export const Grid = styled.div`
     display: grid;
     ${mq.mob`grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));`}
     ${mq.handheld`grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));`}
+    ${mq.dekstop`grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));`}
 `;
 
 export const GridTwo = styled.div`
