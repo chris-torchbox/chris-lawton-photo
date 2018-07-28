@@ -10,7 +10,7 @@ class PostsGrid extends Component {
   renderPosts() {
     return this.props.posts.map(post =>
       (
-        <Card to={post.slug} key={post.title} style={{ backgroundImage: `url(http://res.cloudinary.com/chrislawton/image/upload/fl_progressive,q_50/v1521667105/covers/${post.thumbnail})` }}>
+        <Card to={post.slug} key={post.title} style={{ backgroundImage: `url(https://res.cloudinary.com/chrislawton/image/upload/fl_progressive,q_50/v1521667105/covers/${post.thumbnail})` }}>
           <Overlay />
           <CardContent>
             <Title>{post.title}</Title>
