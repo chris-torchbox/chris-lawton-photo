@@ -182,7 +182,12 @@ class Post extends Component {
             <span className="is-hidden" />
           )}
 
-          <Questions answers={post.questions} />
+          {post.questions.bestView ? (
+            <Questions answers={post.questions} />
+          ) : (
+            <span className="is-hidden" />
+          )}
+
 
           <TextContainer>
             <DiscussionEmbed shortname="chrislawton" />
