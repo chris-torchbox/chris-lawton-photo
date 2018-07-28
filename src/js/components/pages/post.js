@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { Image, CloudinaryContext } from 'cloudinary-react';
 import BackgroundImage from 'react-background-image-loader';
 import { DiscussionEmbed } from 'disqus-react';
-import { Hero, HeroHeading, HeroTeaser } from './../styled/hero';
+import { HeroHeading, HeroTeaser } from './../styled/hero';
 import { TextContainer, PhotoContainer, BreakoutPhoto } from './../styled/container';
 import { GridTwo, GridThree } from './../styled/grid';
 import Questions from './../styled/questions';
