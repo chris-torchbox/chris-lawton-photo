@@ -5,6 +5,7 @@ import { Image, CloudinaryContext } from 'cloudinary-react';
 import BackgroundImage from 'react-background-image-loader';
 import { DiscussionEmbed } from 'disqus-react';
 import { HeroHeading, HeroTeaser } from './../styled/hero';
+import { EyeContainer } from './../styled/eye-container';
 import { TextContainer, PhotoContainer, BreakoutPhoto } from './../styled/container';
 import { GridTwo, GridThree } from './../styled/grid';
 import Questions from './../styled/questions';
@@ -68,9 +69,9 @@ class Post extends Component {
             </NavLink>
             <HeroHeading>{post.title}</HeroHeading>
             <HeroTeaser>{post.teaser}</HeroTeaser>
-            <div onClick={revealHero} onKeyDown={this.revealHero} tabIndex="0" role="button" >
+            <EyeContainer onClick={revealHero} onKeyDown={this.revealHero} tabIndex="0" role="button" >
               <Eye />
-            </div>
+            </EyeContainer>
           </BackgroundImage>
 
           <TextContainer>

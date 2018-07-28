@@ -12,7 +12,7 @@ export const mq = {
       ${css(...args)}
     }
   `,
-  dekstop: (...args) => css`
+  desktop: (...args) => css`
     @media (min-width: 1400px) {
       ${css(...args)}
     }

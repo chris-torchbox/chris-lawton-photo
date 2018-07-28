@@ -1,13 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
+import { mq } from './media-queries';
 
 const QuestionsWrapper = styled.div`
     background: #f7f7f7;
-    margin: 4rem auto;
+    margin: 0 auto 20px;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 90px 160px;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    ${mq.handheld`
+      grid-template-columns: repeat(2, 1fr);
+      padding: 50px 70px;
+    `}
+    ${mq.desktop`
+      padding: 90px 160px;
+      margin: 4rem auto;
+    `}
 `;
 
 const QuestionTitle = styled.h5`
