@@ -1,18 +1,18 @@
 {
     "title": "NYC",
     "country": "USA",
-    "teaser": "",
+    "teaser": "There's nowhere like it",
     "date": "",
     "textOne": "",
     "textTwo": "",
     "textThree": "",
     "questions": {
-      "bestView": "",
-      "interestingThing": "",
-      "favouriteMoment": "",
-      "enjoyableMeal": "",
-      "biggestSurprise": "",
-      "topTip": ""
+      "bestView": "Far too many to choose from but if I had to, it would be the the Top of the Rock Observation Deck.",
+      "interestingThing": "New Yorkers drink 7 times more coffee than people in the rest of America",
+      "favouriteMoment": "Watching a man trying to sell his hip-hip cd to my Dad.",
+      "enjoyableMeal": "The slice of cheesecake that was bigger than my head. We had to walk it off after!",
+      "biggestSurprise": "How cold it was! People were wearing face masks the day we arrived and I thought it was a but much. How wrong I was!",
+      "topTip": "Get the city pass - it saved us so much time by skipping the queues."
     },
     "hero": {
       "main": "http://res.cloudinary.com/chrislawton/image/upload/v1522007332/nyc/bridge.jpg",

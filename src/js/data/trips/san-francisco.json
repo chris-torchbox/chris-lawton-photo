@@ -1,18 +1,18 @@
 {
   "title": "San Francisco",
   "country": "USA",
-  "teaser": "",
+  "teaser": "The city of steep hills",
   "date": "",
   "textOne": "",
   "textTwo": "",
   "textThree": "",
   "questions": {
-    "bestView": "",
-    "interestingThing": "",
-    "favouriteMoment": "",
-    "enjoyableMeal": "",
-    "biggestSurprise": "",
-    "topTip": ""
+    "bestView": "Taking the boat over to Alcatraz at sunset and seeing the Golden Gate bridge.",
+    "interestingThing": "The steepest street is 31.5 degrees!",
+    "favouriteMoment": "Walking around Golden Gate Park and seeing groups of people swing dancing roller blading and everything else in-between.",
+    "enjoyableMeal": "Mochi ice cream in the Japanese tea garden.",
+    "biggestSurprise": "Trader Joes! I wish they were in the UK.",
+    "topTip": "Do the Alcatraz night tour - the stories you're told are captivating."
   },
   "hero": {
     "main": "http://res.cloudinary.com/chrislawton/image/upload/v1525983232/san-francisco/blue.jpg",

@@ -1,18 +1,18 @@
 {
     "title": "Santorini",
     "country": "Greece",
-    "teaser": "",
+    "teaser": "Spectacular Sunsets",
     "date": "",
     "textOne": "",
     "textTwo": "",
     "textThree": "",
     "questions": {
-      "bestView": "",
-      "interestingThing": "",
-      "favouriteMoment": "",
-      "enjoyableMeal": "",
-      "biggestSurprise": "",
-      "topTip": ""
+      "bestView": "Stumbling on a Red Bull free running event at sunset made for some great views.",
+      "interestingThing": "There is so little rain on the island of Santorini, that wine in more plentiful than water.",
+      "favouriteMoment": "Getting lost around the winding streets of Oia.",
+      "enjoyableMeal": "Souvlaki! All the Souvlaki we had was fantastic.",
+      "biggestSurprise": "The ranom formation of all the houses and buildings - it's like a giant game of Where's Wally!",
+      "topTip": "Use the local buses to get around the island - they're so easy to understand."
     },
     "hero": {
       "main": "http://res.cloudinary.com/chrislawton/image/upload/v1522354236/santorini/alley.jpg",

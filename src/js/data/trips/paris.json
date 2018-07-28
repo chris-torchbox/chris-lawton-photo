@@ -1,18 +1,18 @@
 {
     "title": "Paris",
     "country": "France",
-    "teaser": "",
+    "teaser": "Oh la la",
     "date": "",
     "textOne": "",
     "textTwo": "",
     "textThree": "",
     "questions": {
-      "bestView": "",
-      "interestingThing": "",
-      "favouriteMoment": "",
-      "enjoyableMeal": "",
-      "biggestSurprise": "",
-      "topTip": ""
+      "bestView": "Sitting on the steps by the Sacre Coeur, looking back over Paris.",
+      "interestingThing": "Paris only has one stop sign in the entire city.",
+      "favouriteMoment": "Seeing the bridge where Inception was filmed.",
+      "enjoyableMeal": "Typically French, but a Beef bourguignon with a carafe of red wine in a small cafe in Montmartre.",
+      "biggestSurprise": "How you're able to visit Paris numerous times but are still able to find something new every time.",
+      "topTip": "Stay in a central location - it makes for a good base to go exploring from."
     },
     "hero": {
       "main": "http://res.cloudinary.com/chrislawton/image/upload/v1522182972/paris/tunnel.jpg",

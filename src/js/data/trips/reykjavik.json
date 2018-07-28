@@ -1,18 +1,18 @@
 {
     "title": "Reykjavik",
-    "country": "",
-    "teaser": "",
+    "country": "Iceland",
+    "teaser": "Colourful rooftops and creative people",
     "date": "",
     "textOne": "",
     "textTwo": "",
     "textThree": "",
     "questions": {
-      "bestView": "",
-      "interestingThing": "",
-      "favouriteMoment": "",
-      "enjoyableMeal": "",
-      "biggestSurprise": "",
-      "topTip": ""
+      "bestView": "The view from the top of the Hallgrimskirkja is not to be missed.",
+      "interestingThing": "It's the northernmost capital in the world.",
+      "favouriteMoment": "Swimming the blue lagoon - there's nowhere like it.",
+      "enjoyableMeal": "Fresh fish and chips in downtown Reykjavik.",
+      "biggestSurprise": "How cold it was! I packed for cold weather - but nothing like that!",
+      "topTip": "Reykjavik is great, but hire a 4 x 4 and go expoloring - it's your best bet to see the rest of Iceland."
     },
     "hero": {
       "main": "http://res.cloudinary.com/chrislawton/image/upload/v1522353247/reykjavik/church.jpg",

@@ -1,18 +1,18 @@
 {
     "title": "Monterey",
     "country": "California",
-    "teaser": "",
+    "teaser": "All about the sea",
     "date": "",
     "textOne": "",
     "textTwo": "",
     "textThree": "",
     "questions": {
-      "bestView": "",
-      "interestingThing": "",
-      "favouriteMoment": "",
-      "enjoyableMeal": "",
-      "biggestSurprise": "",
-      "topTip": ""
+      "bestView": "Looking over the side of the boat on our whale watching trip to see hundreds of jellyfish! There were so many at one point we were in danger of getting the boat stuck.",
+      "interestingThing": "The Monterey Bay National Marine Sanctuary covers 5,312 square miles, one and a half times the size of the largest national park in the continental U.S.",
+      "favouriteMoment": "Seeing humpback whales at sea, a moment i'll never forget.",
+      "enjoyableMeal": "Chicken Sub with chips and a root beer plus the friendliest waitress in the world.",
+      "biggestSurprise": "When a humpback whale surfaced and nudged the side of our boat!",
+      "topTip": "Definitely go whale watching and do it in the morning, the sea will be calmer."
     },
     "hero": {
       "main": "http://res.cloudinary.com/chrislawton/image/upload/v1522355421/monterey/tail.jpg",

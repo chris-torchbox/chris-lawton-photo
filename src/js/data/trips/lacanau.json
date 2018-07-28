@@ -1,18 +1,18 @@
 {
     "title": "Lacanau",
     "country": "France",
-    "teaser": "",
+    "teaser": "A surfers paradise",
     "date": "",
     "textOne": "",
     "textTwo": "",
     "textThree": "",
     "questions": {
-      "bestView": "",
-      "interestingThing": "",
-      "favouriteMoment": "",
-      "enjoyableMeal": "",
-      "biggestSurprise": "",
-      "topTip": ""
+      "bestView": "Sitting by the tent, watching the sunset under a canopy of pine trees.",
+      "interestingThing": "It's incredibly popular surf spot, unfortunatley it was flat every day we were there!",
+      "favouriteMoment": "Cycling down the coastal path that runs through the woods.",
+      "enjoyableMeal": "After a short walk to the seafront we enjoyed a few plates of seafood.",
+      "biggestSurprise": "That our tent didn't leak during the torrential downpour on the first night.",
+      "topTip": "Book ahead for the campsites - we didn't and got lucky, but they fill up quickly."
     },
     "hero": {
       "main": "http://res.cloudinary.com/chrislawton/image/upload/v1522006286/lacanau/pinecone.jpg",

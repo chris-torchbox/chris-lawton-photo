@@ -1,18 +1,18 @@
 {
     "title": "Las Vegas",
     "country": "USA",
-    "teaser": "",
+    "teaser": "#vegasStrong",
     "date": "",
     "textOne": "",
     "textTwo": "",
     "textThree": "",
     "questions": {
-      "bestView": "",
-      "interestingThing": "",
-      "favouriteMoment": "",
-      "enjoyableMeal": "",
-      "biggestSurprise": "",
-      "topTip": ""
+      "bestView": "Walking the strip at night, it's a unique experience.",
+      "interestingThing": "Despite legalising casino gaming in 1931, the sale of lottery tickets is still prohibited in the state of Nevada. Errr, what?",
+      "favouriteMoment": "Watching my number come in on the roulette table in Caesars Palace : )",
+      "enjoyableMeal": "Honestly, there wasn't one. Vegas has some of the worst food i've ever had.",
+      "biggestSurprise": "You have no idea what time of day it is inside a casino. They have no windows so it could be 6am or 10pm.",
+      "topTip": "If you're travelling around the USA, don't spend too long here - once you've seen once casion they get samey quite quickly."
     },
     "hero": {
       "main": "http://res.cloudinary.com/chrislawton/image/upload/v1525972671/las-vegas/sign.jpg",

@@ -54,10 +54,10 @@ const postsData = [
     thumbnail: 'las-vegas.jpg',
   },
   {
-    title: 'Priors Wood',
-    slug: '/priors-wood/',
+    title: 'Monterey',
+    slug: '/monterey/',
     date: 'April 20th 2017',
-    thumbnail: 'priors-wood.jpg',
+    thumbnail: 'monterey.jpg',
   },
   {
     title: 'NYC',
@@ -78,16 +78,16 @@ const postsData = [
     thumbnail: 'pismo.jpg',
   },
   {
+    title: 'Priors Wood',
+    slug: '/priors-wood/',
+    date: 'April 20th 2017',
+    thumbnail: 'priors-wood.jpg',
+  },
+  {
     title: 'Reykjavik',
     slug: '/reykjavik/',
     date: 'April 20th 2017',
     thumbnail: 'reykjavik.jpg',
-  },
-  {
-    title: 'Santorini',
-    slug: '/santorini/',
-    date: 'April 20th 2017',
-    thumbnail: 'santorini.jpg',
   },
   {
     title: 'San Francisco',
@@ -96,10 +96,10 @@ const postsData = [
     thumbnail: 'san-francisco.jpg',
   },
   {
-    title: 'Monterey',
-    slug: '/monterey/',
+    title: 'Santorini',
+    slug: '/santorini/',
     date: 'April 20th 2017',
-    thumbnail: 'monterey.jpg',
+    thumbnail: 'santorini.jpg',
   },
   {
     title: 'Yosemite',

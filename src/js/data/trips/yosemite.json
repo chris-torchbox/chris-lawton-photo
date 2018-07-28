@@ -1,18 +1,18 @@
 {
     "title": "Yosemite",
     "country": "USA",
-    "teaser": "",
+    "teaser": "Awe-inspiring nature",
     "date": "",
     "textOne": "",
     "textTwo": "",
     "textThree": "",
     "questions": {
-      "bestView": "",
-      "interestingThing": "",
-      "favouriteMoment": "",
-      "enjoyableMeal": "",
-      "biggestSurprise": "",
-      "topTip": ""
+      "bestView": "Glacier Point is spectacular along with Tunnel and Valley View. Also Tenaya Lake. There's too many! ",
+      "interestingThing": "Yosemite National Park is visited by over 3.5 million people every year.",
+      "favouriteMoment": "Cruising round Yosemites roads in our (free!) upgraded Camaro SS.",
+      "enjoyableMeal": "The local diner next to our accomodation was... interesting, to say the least.",
+      "biggestSurprise": "How vast it is. You'll need a car!",
+      "topTip": "Summer is the busiest time so i'd recommend going in Autumn, plus you get the bonus of the different leaf colours."
     },
     "hero": {
       "main": "http://res.cloudinary.com/chrislawton/image/upload/v1525984350/yosemite/valley.jpg",

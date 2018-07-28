@@ -1,18 +1,18 @@
 {
     "title": "Pismo",
     "country": "California",
-    "teaser": "",
+    "teaser": "A classic beach town",
     "date": "",
     "textOne": "",
     "textTwo": "",
     "textThree": "",
     "questions": {
-      "bestView": "",
-      "interestingThing": "",
-      "favouriteMoment": "",
-      "enjoyableMeal": "",
-      "biggestSurprise": "",
-      "topTip": ""
+      "bestView": "Walking down tne wooden pier that stretches out toward the setting sun.",
+      "interestingThing": "The pier at Pismo Beach is 1200 feet long and is a popular pier for fishing, watching the whale migration, or watching the sunset.",
+      "favouriteMoment": "Watching a skater carve down the hill on his longboard. So Cali.",
+      "enjoyableMeal": "Old West Cinnamon Rolls!",
+      "biggestSurprise": "The lack of surfers in the water, although i've heard it's pretty chilly.",
+      "topTip": "1-2 days is enough here, but it's definitely worth the stop."
     },
     "hero": {
         "main": "http://res.cloudinary.com/chrislawton/image/upload/v1522356663/pismo/beach.jpg",
