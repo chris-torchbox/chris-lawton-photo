@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "autoprefixer": "^7.1.6",
-    "babel-preset-stage-3": "^6.24.1",
     "cloudinary-react": "^1.0.6",
     "disqus-react": "^1.0.5",
     "eslint-plugin-react": "^7.5.1",
@@ -34,7 +33,7 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.7",
     "eslint": "^4.12.1",
