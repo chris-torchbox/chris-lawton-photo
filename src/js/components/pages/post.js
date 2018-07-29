@@ -25,7 +25,7 @@ class Post extends Component {
     document.querySelector('header').classList.add('is-hidden');
 
     const devUrl = `http://localhost:8080/src/js/data/trips/${this.props.match.params.post}.json`;
-    const prodUrl = `https://chrislawton.netlify.com/src/js/data/trips/${this.props.match.params.post}.json`;
+    const prodUrl = `https://chrislawton.co.uk/src/js/data/trips/${this.props.match.params.post}.json`;
     const url = (process.env.NODE_ENV === 'development') ? devUrl : prodUrl;
 
     fetch(url)
