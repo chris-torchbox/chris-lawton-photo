@@ -4,7 +4,7 @@ import { mq } from './media-queries';
 
 const QuestionsWrapper = styled.div`
     background: #f7f7f7;
-    margin: 0 auto 20px;
+    margin: 0 auto;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr;
