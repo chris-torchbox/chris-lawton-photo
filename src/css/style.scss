@@ -1,4 +1,5 @@
 @charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600');
 
 // Configuration and helpers
 @import
@@ -13,7 +14,6 @@
 // Base stuff
 @import
 'base/base',
-'base/fonts',
 'base/typography',
 'base/helpers';
 

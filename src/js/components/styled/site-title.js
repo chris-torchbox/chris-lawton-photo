@@ -1,15 +1,12 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import { mq } from './media-queries';
 
 export const SiteTitle = styled(NavLink)`
-    font-family: 'azedobold', sans-serif;
-    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
     line-height: 1;
-    ${mq.handheld`
-        letter-spacing: 10px;
-        font-size: 40px;
-    `}
+    font-weight: 400;
+    padding-top: 5px;
 `;
 
 export default SiteTitle;
