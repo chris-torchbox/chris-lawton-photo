@@ -15,7 +15,7 @@ const QuestionsWrapper = styled.div`
     `}
     ${mq.desktop`
       padding: 90px 160px;
-      margin: 4rem auto;
+      margin: 4rem auto 0;
     `}
 `;
 
