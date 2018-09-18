@@ -79,9 +79,13 @@ class Post extends Component {
             </EyeContainer>
           </BackgroundImage>
 
-          <TextContainer>
-            <p>{post.textOne}</p>
-          </TextContainer>
+          {post.textOne ? (
+            <TextContainer>
+              <p>{post.textOne}</p>
+            </TextContainer>
+          ) : (
+            null
+          )}
 
           {post.gridTwoFirst ? (
             <PhotoContainer>
@@ -93,7 +97,7 @@ class Post extends Component {
               </CloudinaryContext>
             </PhotoContainer>
           ) : (
-            <span className="is-hidden" />
+            null
           )}
 
           {post.gridOneFirst ? (
@@ -103,12 +107,16 @@ class Post extends Component {
               </CloudinaryContext>
             </PhotoContainer>
           ) : (
-            <span className="is-hidden" />
+            null
           )}
 
-          <TextContainer>
-            <p>{post.textTwo}</p>
-          </TextContainer>
+          {post.textTwo ? (
+            <TextContainer>
+              <p>{post.textTwo}</p>
+            </TextContainer>
+          ) : (
+            null
+          )}
 
           {post.gridSix ? (
             <PhotoContainer>
@@ -124,19 +132,23 @@ class Post extends Component {
               </CloudinaryContext>
             </PhotoContainer>
           ) : (
-            <span className="is-hidden" />
+            null
           )}
 
-          <TextContainer>
-            <p>{post.textThree}</p>
-          </TextContainer>
+          {post.textThree ? (
+            <TextContainer>
+              <p>{post.textThree}</p>
+            </TextContainer>
+          ) : (
+            null
+          )}
 
           {post.breakoutFirst ? (
             <BreakoutPhoto>
               <Image publicId={post.breakoutFirst} />
             </BreakoutPhoto>
           ) : (
-            <span className="is-hidden" />
+            null
           )}
 
           {post.gridTwoSecond ? (
@@ -149,19 +161,23 @@ class Post extends Component {
               </CloudinaryContext>
             </PhotoContainer>
           ) : (
-            <span className="is-hidden" />
+            null
           )}
 
-          <TextContainer>
-            <p>{post.textFour}</p>
-          </TextContainer>
+          {post.textFour ? (
+            <TextContainer>
+              <p>{post.textFour}</p>
+            </TextContainer>
+          ) : (
+            null
+          )}
 
           {post.breakoutSecond ? (
             <BreakoutPhoto>
               <Image publicId={post.breakoutSecond} />
             </BreakoutPhoto>
           ) : (
-            <span className="is-hidden" />
+            null
           )}
 
           {post.gridThree ? (
@@ -175,7 +191,7 @@ class Post extends Component {
               </CloudinaryContext>
             </PhotoContainer>
           ) : (
-            <span className="is-hidden" />
+            null
           )}
 
           {post.gridOneSecond ? (
@@ -185,13 +201,13 @@ class Post extends Component {
               </CloudinaryContext>
             </PhotoContainer>
           ) : (
-            <span className="is-hidden" />
+            null
           )}
 
           {post.questions.bestView ? (
             <Questions answers={post.questions} />
           ) : (
-            <span className="is-hidden" />
+            null
           )}
 
           <PreComment>What did I miss? Help others by leaving a comment below!</PreComment>
