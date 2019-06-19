@@ -1,13 +1,6 @@
 import styled from 'styled-components';
 import { mq } from './media-queries';
 
-export const TextContainer = styled.div`
-    max-width: 650px;
-    margin: 0 auto 10px;
-    padding: 0 20px;
-    ${mq.handheld`margin: 4rem auto;`}
-`;
-
 export const PhotoContainer = styled.div`
     max-width: 1060px;
     margin: 0 auto 10px;

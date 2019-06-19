@@ -5,9 +5,11 @@ import { Image, CloudinaryContext } from 'cloudinary-react';
 import BackgroundImage from 'react-background-image-loader';
 import { DiscussionEmbed } from 'disqus-react';
 
+import TextBlock from '../TextBlock';
+
 import { HeroHeading, HeroTeaser } from './../styled/hero';
 import { EyeContainer } from './../styled/eye-container';
-import { TextContainer, PhotoContainer, BreakoutPhoto } from './../styled/container';
+import { PhotoContainer, BreakoutPhoto } from './../styled/container';
 import { GridTwo, GridThree } from './../styled/grid';
 import Questions from './../styled/questions';
 import Arrow from './../styled/svg/arrow';
@@ -79,13 +81,9 @@ class Post extends Component {
             </EyeContainer>
           </BackgroundImage>
 
-          {post.textOne ? (
-            <TextContainer>
-              <p>{post.textOne}</p>
-            </TextContainer>
-          ) : (
-            null
-          )}
+          {post.textOne &&
+            <TextBlock text={post.textOne} />
+          }
 
           {post.gridTwoFirst ? (
             <PhotoContainer>
@@ -110,13 +108,9 @@ class Post extends Component {
             null
           )}
 
-          {post.textTwo ? (
-            <TextContainer>
-              <p>{post.textTwo}</p>
-            </TextContainer>
-          ) : (
-            null
-          )}
+          {post.textTwo &&
+            <TextBlock text={post.textTwo} />
+          }
 
           {post.gridSix ? (
             <PhotoContainer>
@@ -135,13 +129,9 @@ class Post extends Component {
             null
           )}
 
-          {post.textThree ? (
-            <TextContainer>
-              <p>{post.textThree}</p>
-            </TextContainer>
-          ) : (
-            null
-          )}
+          {post.textThree &&
+            <TextBlock text={post.textThree} />
+          }
 
           {post.breakoutFirst ? (
             <BreakoutPhoto>
@@ -164,13 +154,9 @@ class Post extends Component {
             null
           )}
 
-          {post.textFour ? (
-            <TextContainer>
-              <p>{post.textFour}</p>
-            </TextContainer>
-          ) : (
-            null
-          )}
+          {post.textFour &&
+            <TextBlock text={post.textFour} />
+          }
 
           {post.breakoutSecond ? (
             <BreakoutPhoto>
@@ -212,9 +198,9 @@ class Post extends Component {
 
           <PreComment>What did I miss? Help others by leaving a comment below!</PreComment>
 
-          <TextContainer>
+          <div style={{ maxWidth: '650px', margin: '1rem auto' }}>
             <DiscussionEmbed shortname="chrislawton" />
-          </TextContainer>
+          </div>
         </CloudinaryContext>
       </div>
     );
