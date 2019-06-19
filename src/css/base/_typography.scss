@@ -1,7 +1,7 @@
 // Basic typography style for copy text
 body {
   color: $text-color;
-  font-family: $body-font;
+  font-family: $primary-font;
   font-weight: 300;
   font-size: 18px;
 }
@@ -12,9 +12,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $primary-font;
   line-height: initial;
   margin: 0 0 1rem;
+  font-weight: 400;
 }
 
 

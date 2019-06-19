@@ -3,8 +3,15 @@ import { mq } from './media-queries';
 
 export const Grid = styled.div`
     display: grid;
-    ${mq.mob`grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));`}
-    ${mq.handheld`grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));`}
+    grid-gap: 1rem;
+    padding: 0 1.5vw 1.5vw;
+    ${mq.mob`
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    `}
+    ${mq.handheld`
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+        grid-gap: 1.5rem;
+    `}
     ${mq.desktop`grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));`}
 `;
 

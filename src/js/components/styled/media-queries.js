@@ -12,6 +12,11 @@ export const mq = {
       ${css(...args)}
     }
   `,
+  laptop: (...args) => css`
+    @media (min-width: 1100px) {
+      ${css(...args)}
+    }
+  `,
   desktop: (...args) => css`
     @media (min-width: 1400px) {
       ${css(...args)}
