@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Helmet from 'react-helmet';
 import { NavLink } from 'react-router-dom';
 import { Image, CloudinaryContext } from 'cloudinary-react';
 import BackgroundImage from 'react-background-image-loader';
 import { DiscussionEmbed } from 'disqus-react';
+import { useSpring, animated } from 'react-spring';
 
 import TextBlock from '../TextBlock';
 
@@ -23,6 +24,11 @@ const Post = ({ match }) => {
   const url = (process.env.NODE_ENV === 'development') ? devUrl : prodUrl;
 
   const [data, loading] = useFetch(url);
+  const fade = useSpring({
+    zIndex: 1,
+    opacity: loading ? 0 : 1,
+    transform: loading ? 'translate3d(0px, 20px, 0px)' : 'translate3d(0px, 0px, 0px)',
+  });
 
   function revealHero() {
     document.querySelector('.hero').classList.toggle('is-revealed');
@@ -44,8 +50,10 @@ const Post = ({ match }) => {
               <NavLink to="/">
                 <Arrow />
               </NavLink>
-              <HeroHeading>{data.title}</HeroHeading>
-              <HeroTeaser>{data.teaser}</HeroTeaser>
+              <animated.div style={fade}>
+                <HeroHeading>{data.title}</HeroHeading>
+                <HeroTeaser>{data.teaser}</HeroTeaser>
+              </animated.div>
               <EyeContainer onClick={revealHero} onKeyDown={revealHero} tabIndex="0" role="button" >
                 <Eye />
               </EyeContainer>
