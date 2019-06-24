@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Helmet from 'react-helmet';
 import { NavLink } from 'react-router-dom';
 import { Image, CloudinaryContext } from 'cloudinary-react';
@@ -15,172 +15,149 @@ import Questions from './../styled/questions';
 import Arrow from './../styled/svg/arrow';
 import Eye from './../styled/svg/eye';
 import { PreComment } from './../styled/pre-comment';
+import useFetch from '../hooks';
 
-class Post extends Component {
-  constructor() {
-    super();
-    this.state = {
-      isLoading: true,
-      tripData: null,
-    };
+const Post = ({ match }) => {
+  const devUrl = `http://localhost:8080/src/js/data/trips/${match.params.post}.json`;
+  const prodUrl = `https://chrislawton.co.uk/src/js/data/trips/${match.params.post}.json`;
+  const url = (process.env.NODE_ENV === 'development') ? devUrl : prodUrl;
+
+  const [data, loading] = useFetch(url);
+
+  function revealHero() {
+    document.querySelector('.hero').classList.toggle('is-revealed');
   }
 
-  componentDidMount() {
-    const devUrl = `http://localhost:8080/src/js/data/trips/${this.props.match.params.post}.json`;
-    const prodUrl = `https://chrislawton.co.uk/src/js/data/trips/${this.props.match.params.post}.json`;
-    const url = (process.env.NODE_ENV === 'development') ? devUrl : prodUrl;
+  return (
+    <React.Fragment>
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
+        <div>
+          <Helmet>
+            <title>{data.title} | Chris Lawton Photography</title>
+          </Helmet>
 
-    fetch(url)
-      .then((response) => {
-        if (response.status >= 400) {
-          throw new Error('Bad response from server');
-        }
-        return response.json();
-      })
-      .then((data) => {
-        this.setState({
-          tripData: data,
-          isLoading: false,
-        });
-      });
-  }
+          <CloudinaryContext cloudName="chrislawton" quality="40" flags="progressive">
 
-  render() {
-    if (this.state.isLoading) {
-      // todo - add spinner
-      return null;
-    }
-    const post = this.state.tripData;
+            <BackgroundImage src={data.hero.main} placeholder={data.hero.placeholder} className="hero">
+              <NavLink to="/">
+                <Arrow />
+              </NavLink>
+              <HeroHeading>{data.title}</HeroHeading>
+              <HeroTeaser>{data.teaser}</HeroTeaser>
+              <EyeContainer onClick={revealHero} onKeyDown={revealHero} tabIndex="0" role="button" >
+                <Eye />
+              </EyeContainer>
+            </BackgroundImage>
 
-    function revealHero() {
-      document.querySelector('.hero').classList.toggle('is-revealed');
-    }
+            {data.textOne &&
+              <TextBlock text={data.textOne} />
+            }
 
-    return (
-      <div>
-        <Helmet>
-          <title>{post.title} | Chris Lawton Photography</title>
-        </Helmet>
+            {data.gridTwoFirst &&
+              <PhotoContainer>
+                <CloudinaryContext width="1050">
+                  <GridTwo>
+                    <Image publicId={data.gridTwoFirst.imgOne} />
+                    <Image publicId={data.gridTwoFirst.imgTwo} />
+                  </GridTwo>
+                </CloudinaryContext>
+              </PhotoContainer>
+            }
 
-        <CloudinaryContext cloudName="chrislawton" quality="40" flags="progressive">
+            {data.gridOneFirst &&
+              <PhotoContainer>
+                <CloudinaryContext width="2120">
+                  <Image publicId={data.gridOneFirst} />
+                </CloudinaryContext>
+              </PhotoContainer>
+            }
 
-          <BackgroundImage src={post.hero.main} placeholder={post.hero.placeholder} className="hero">
-            <NavLink to="/">
-              <Arrow />
-            </NavLink>
-            <HeroHeading>{post.title}</HeroHeading>
-            <HeroTeaser>{post.teaser}</HeroTeaser>
-            <EyeContainer onClick={revealHero} onKeyDown={revealHero} tabIndex="0" role="button" >
-              <Eye />
-            </EyeContainer>
-          </BackgroundImage>
+            {data.textTwo &&
+              <TextBlock text={data.textTwo} />
+            }
 
-          {post.textOne &&
-            <TextBlock text={post.textOne} />
-          }
+            {data.gridSix &&
+              <PhotoContainer>
+                <CloudinaryContext width="692">
+                  <GridThree>
+                    <Image publicId={data.gridSix.imgOne} />
+                    <Image publicId={data.gridSix.imgTwo} />
+                    <Image publicId={data.gridSix.imgThree} />
+                    <Image publicId={data.gridSix.imgFour} />
+                    <Image publicId={data.gridSix.imgFive} />
+                    <Image publicId={data.gridSix.imgSix} />
+                  </GridThree>
+                </CloudinaryContext>
+              </PhotoContainer>
+            }
 
-          {post.gridTwoFirst &&
-            <PhotoContainer>
-              <CloudinaryContext width="1050">
-                <GridTwo>
-                  <Image publicId={post.gridTwoFirst.imgOne} />
-                  <Image publicId={post.gridTwoFirst.imgTwo} />
-                </GridTwo>
-              </CloudinaryContext>
-            </PhotoContainer>
-          }
+            {data.textThree &&
+              <TextBlock text={data.textThree} />
+            }
 
-          {post.gridOneFirst &&
-            <PhotoContainer>
-              <CloudinaryContext width="2120">
-                <Image publicId={post.gridOneFirst} />
-              </CloudinaryContext>
-            </PhotoContainer>
-          }
+            {data.breakoutFirst &&
+              <BreakoutPhoto>
+                <Image publicId={data.breakoutFirst} />
+              </BreakoutPhoto>
+            }
 
-          {post.textTwo &&
-            <TextBlock text={post.textTwo} />
-          }
+            {data.gridTwoSecond &&
+              <PhotoContainer>
+                <CloudinaryContext width="1050">
+                  <GridTwo>
+                    <Image publicId={data.gridTwoSecond.imgOne} />
+                    <Image publicId={data.gridTwoSecond.imgTwo} />
+                  </GridTwo>
+                </CloudinaryContext>
+              </PhotoContainer>
+            }
 
-          {post.gridSix &&
-            <PhotoContainer>
-              <CloudinaryContext width="692">
-                <GridThree>
-                  <Image publicId={post.gridSix.imgOne} />
-                  <Image publicId={post.gridSix.imgTwo} />
-                  <Image publicId={post.gridSix.imgThree} />
-                  <Image publicId={post.gridSix.imgFour} />
-                  <Image publicId={post.gridSix.imgFive} />
-                  <Image publicId={post.gridSix.imgSix} />
-                </GridThree>
-              </CloudinaryContext>
-            </PhotoContainer>
-          }
+            {data.textFour &&
+              <TextBlock text={data.textFour} />
+            }
 
-          {post.textThree &&
-            <TextBlock text={post.textThree} />
-          }
+            {data.breakoutSecond &&
+              <BreakoutPhoto>
+                <Image publicId={data.breakoutSecond} />
+              </BreakoutPhoto>
+            }
 
-          {post.breakoutFirst &&
-            <BreakoutPhoto>
-              <Image publicId={post.breakoutFirst} />
-            </BreakoutPhoto>
-          }
+            {data.gridThree &&
+              <PhotoContainer>
+                <CloudinaryContext width="692">
+                  <GridThree>
+                    <Image publicId={data.gridThree.imgOne} />
+                    <Image publicId={data.gridThree.imgTwo} />
+                    <Image publicId={data.gridThree.imgThree} />
+                  </GridThree>
+                </CloudinaryContext>
+              </PhotoContainer>
+            }
 
-          {post.gridTwoSecond &&
-            <PhotoContainer>
-              <CloudinaryContext width="1050">
-                <GridTwo>
-                  <Image publicId={post.gridTwoSecond.imgOne} />
-                  <Image publicId={post.gridTwoSecond.imgTwo} />
-                </GridTwo>
-              </CloudinaryContext>
-            </PhotoContainer>
-          }
+            {data.gridOneSecond &&
+              <PhotoContainer>
+                <CloudinaryContext width="2120">
+                  <Image publicId={data.gridOneSecond} />
+                </CloudinaryContext>
+              </PhotoContainer>
+            }
 
-          {post.textFour &&
-            <TextBlock text={post.textFour} />
-          }
+            {data.questions.bestView &&
+              <Questions answers={data.questions} />
+            }
 
-          {post.breakoutSecond &&
-            <BreakoutPhoto>
-              <Image publicId={post.breakoutSecond} />
-            </BreakoutPhoto>
-          }
+            <PreComment>What did I miss? Help others by leaving a comment below!</PreComment>
 
-          {post.gridThree &&
-            <PhotoContainer>
-              <CloudinaryContext width="692">
-                <GridThree>
-                  <Image publicId={post.gridThree.imgOne} />
-                  <Image publicId={post.gridThree.imgTwo} />
-                  <Image publicId={post.gridThree.imgThree} />
-                </GridThree>
-              </CloudinaryContext>
-            </PhotoContainer>
-          }
-
-          {post.gridOneSecond &&
-            <PhotoContainer>
-              <CloudinaryContext width="2120">
-                <Image publicId={post.gridOneSecond} />
-              </CloudinaryContext>
-            </PhotoContainer>
-          }
-
-          {post.questions.bestView &&
-            <Questions answers={post.questions} />
-          }
-
-          <PreComment>What did I miss? Help others by leaving a comment below!</PreComment>
-
-          <div style={{ maxWidth: '650px', margin: '1rem auto' }}>
-            <DiscussionEmbed shortname="chrislawton" />
-          </div>
-        </CloudinaryContext>
-      </div>
-    );
-  }
-}
+            <div style={{ maxWidth: '650px', margin: '1rem auto' }}>
+              <DiscussionEmbed shortname="chrislawton" />
+            </div>
+          </CloudinaryContext>
+        </div>
+      )}
+    </React.Fragment>
+  );
+};
 
 export default Post;
