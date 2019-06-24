@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Helmet } from 'react-helmet';
 import { BrowserRouter } from 'react-router-dom';
-import Header from './components/header';
 import Main from './components/main';
 
 // Promise polyfill for IE11-.
@@ -36,10 +35,7 @@ ReactDOM.render(
       <meta name="twitter:image" content={hero} />
     </Helmet>
     <BrowserRouter>
-      <div>
-        <Header />
-        <Main />
-      </div>
+      <Main />
     </BrowserRouter>
   </div>
   , document.querySelector('.container'),
