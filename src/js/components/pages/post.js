@@ -70,7 +70,7 @@ class Post extends Component {
             </NavLink>
             <HeroHeading>{post.title}</HeroHeading>
             <HeroTeaser>{post.teaser}</HeroTeaser>
-            <EyeContainer onClick={revealHero} onKeyDown={this.revealHero} tabIndex="0" role="button" >
+            <EyeContainer onClick={revealHero} onKeyDown={revealHero} tabIndex="0" role="button" >
               <Eye />
             </EyeContainer>
           </BackgroundImage>
@@ -79,7 +79,7 @@ class Post extends Component {
             <TextBlock text={post.textOne} />
           }
 
-          {post.gridTwoFirst ? (
+          {post.gridTwoFirst &&
             <PhotoContainer>
               <CloudinaryContext width="1050">
                 <GridTwo>
@@ -88,25 +88,21 @@ class Post extends Component {
                 </GridTwo>
               </CloudinaryContext>
             </PhotoContainer>
-          ) : (
-            null
-          )}
+          }
 
-          {post.gridOneFirst ? (
+          {post.gridOneFirst &&
             <PhotoContainer>
               <CloudinaryContext width="2120">
                 <Image publicId={post.gridOneFirst} />
               </CloudinaryContext>
             </PhotoContainer>
-          ) : (
-            null
-          )}
+          }
 
           {post.textTwo &&
             <TextBlock text={post.textTwo} />
           }
 
-          {post.gridSix ? (
+          {post.gridSix &&
             <PhotoContainer>
               <CloudinaryContext width="692">
                 <GridThree>
@@ -119,23 +115,19 @@ class Post extends Component {
                 </GridThree>
               </CloudinaryContext>
             </PhotoContainer>
-          ) : (
-            null
-          )}
+          }
 
           {post.textThree &&
             <TextBlock text={post.textThree} />
           }
 
-          {post.breakoutFirst ? (
+          {post.breakoutFirst &&
             <BreakoutPhoto>
               <Image publicId={post.breakoutFirst} />
             </BreakoutPhoto>
-          ) : (
-            null
-          )}
+          }
 
-          {post.gridTwoSecond ? (
+          {post.gridTwoSecond &&
             <PhotoContainer>
               <CloudinaryContext width="1050">
                 <GridTwo>
@@ -144,23 +136,19 @@ class Post extends Component {
                 </GridTwo>
               </CloudinaryContext>
             </PhotoContainer>
-          ) : (
-            null
-          )}
+          }
 
           {post.textFour &&
             <TextBlock text={post.textFour} />
           }
 
-          {post.breakoutSecond ? (
+          {post.breakoutSecond &&
             <BreakoutPhoto>
               <Image publicId={post.breakoutSecond} />
             </BreakoutPhoto>
-          ) : (
-            null
-          )}
+          }
 
-          {post.gridThree ? (
+          {post.gridThree &&
             <PhotoContainer>
               <CloudinaryContext width="692">
                 <GridThree>
@@ -170,25 +158,19 @@ class Post extends Component {
                 </GridThree>
               </CloudinaryContext>
             </PhotoContainer>
-          ) : (
-            null
-          )}
+          }
 
-          {post.gridOneSecond ? (
+          {post.gridOneSecond &&
             <PhotoContainer>
               <CloudinaryContext width="2120">
                 <Image publicId={post.gridOneSecond} />
               </CloudinaryContext>
             </PhotoContainer>
-          ) : (
-            null
-          )}
+          }
 
-          {post.questions.bestView ? (
+          {post.questions.bestView &&
             <Questions answers={post.questions} />
-          ) : (
-            null
-          )}
+          }
 
           <PreComment>What did I miss? Help others by leaving a comment below!</PreComment>
 
