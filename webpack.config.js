@@ -56,6 +56,6 @@ module.exports = {
 
   plugins: [
     new ExtractTextPlugin('[name].min.css'),
-    new webpack.EnvironmentPlugin(['NODE_ENV'])
+    new webpack.EnvironmentPlugin(['NODE_ENV']),
   ],
 };
